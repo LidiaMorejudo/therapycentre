@@ -1,0 +1,27 @@
+/*General content*/
+body {
+    background-color: #d9e8cc;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-12, .col-md-6 {
+    padding-left: 0; 
+    padding-right: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
