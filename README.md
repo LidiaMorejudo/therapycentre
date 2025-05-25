@@ -17,3 +17,26 @@ Through the website, users can:
 Access essential information, including location and directions
 
 Built using the Django framework, this platform provides full CRUD functionality, allowing users to create, read, update, and delete their session bookings with ease.
+
+## Table of content
+
+- [Features](#features)
+
+
+
+## Features
+
+### Existing features
+
+
+## Technologies used
+
+### Languages
+- HTML5
+- CSS3
+- JavaScript
+- Python
+
+### Libraries & Additional Programs/Software/Tools
+
+- [Deep Dream Generator](https://deepdreamgenerator.com/) - I utilized Deep Dream Generator, an AI-powered tool, to create images for my project.
