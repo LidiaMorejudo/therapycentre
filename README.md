@@ -18,6 +18,10 @@ Access essential information, including location and directions
 
 Built using the Django framework, this platform provides full CRUD functionality, allowing users to create, read, update, and delete their session bookings with ease.
 
+**IMAGES OF THE DEPLOYED SITE WILL GO HERE**
+
+Images were sourced from [AmiResponsive](https://amiresponsive.co.uk/)
+
 ## Table of content
 
 - [Features](#features)
