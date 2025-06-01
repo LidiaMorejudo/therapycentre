@@ -25,3 +25,25 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/*Navigation bar*/
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #d9e8cc;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.social-icon-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin: 5px;
+    display: flex;
+}
