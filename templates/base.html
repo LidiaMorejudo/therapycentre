@@ -75,7 +75,34 @@
         </main>
     
 
-    <footer class="text-center">...</footer>
+        <!-- Footer content -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-12 mb-4 d-flex flex-column flex-sm-row justify-content-between">
+                <a class="navbar-brand mb-2 mb-sm-0" href="{% url 'index' %}">
+                    <img src="{% static 'favicon/favicon-32x32.png' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    The Therapy Centre
+                </a>
+                <div class="d-flex mb-2 mb-sm-0">
+                    <h6 class="mb-0">H59 High Street, Bristol, BS5 8AH</h6>
+                </div>
+                <div class="d-flex mb-2 mb-sm-0">
+                    <h6 class="mb-0">2025 &copy; Lydia Hammonds</h6>
+                </div>
+                <ul class="navbar-nav d-flex flex-row mb-0">
+                    <li class="nav-item">
+                        <a class="icon-link" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icon-link" href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icon-link" href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     {% block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
