@@ -8,3 +8,6 @@ def findus(request):
 
 def sessions(request):
     return render(request, 'core/sessions.html')
+
+def booking_view(request):
+    return render(request, 'core/booking.html')
