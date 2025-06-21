@@ -47,3 +47,21 @@ nav {
     margin: 5px;
     display: flex;
 }
+
+/*Header/main page*/
+.header {
+    height: 60vh;
+    background: url('/static/images/header_background_main_page.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.callout {
+    background-color: rgba(255,236,236,0.8);
+    padding: 20px 40px;
+    max-width: 90%;
+}
