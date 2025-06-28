@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),  # Routes root URL to your core app
+    path('', include('inquiries.urls')),     # Now includes 'enquiries/' URL
 ]
 
