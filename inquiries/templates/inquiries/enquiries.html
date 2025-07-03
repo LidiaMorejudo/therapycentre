@@ -25,8 +25,13 @@
     <h1>If you have any question</h1>
     <p>Complete this form to get in touch. One of the team will get in touch.</p>
 
-    <!-- Contact form placeholder -->
-    <p><em>Form coming soon...</em></p>
+    <!-- Replace placeholder with actual form -->
+<form method="post">
+    {% csrf_token %}
+    {{ enquiry_form|crispy }}
+    <button class="btn btn-secondary" type="submit">Submit</button>
+</form>
+
 </div>
 
 {% endblock %}
