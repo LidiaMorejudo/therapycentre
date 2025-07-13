@@ -54,5 +54,20 @@
 {% endblock %}
 
 {% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            const modalElement = document.getElementById('contactconfirmationModal');
+            if (modalElement) {
+                var confirmationModal = new bootstrap.Modal(modalElement);
+                confirmationModal.show();
 
+                // Clean up URL
+                urlParams.delete('success');
+                window.history.replaceState({}, document.title, window.location.pathname + (urlParams.toString() ? '?' + urlParams.toString() : ''));
+            }
+        }
+    });
+</script>
 {% endblock scripts %}
