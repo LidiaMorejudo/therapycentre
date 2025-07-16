@@ -76,9 +76,10 @@ As a **Site User**, I can receive an email confirmation of my booking so that I 
 
 As a **Site User**, I can view the therapy centre’s booking policy before submitting the form so that I know what to expect.
 
-As a Site Admin, I can view all upcoming bookings by day, week, or month so that I can ensure sessions are properly scheduled and staffed.
+As a **Site Admin**, I can view all upcoming bookings by day, week, or month so that I can ensure sessions are properly scheduled and staffed.
 
-✅ EPIC: Manage Bookings
+**EPIC 2: Manage Bookings**
+
 As a **Site User**, I can register an account so that I can view and manage my bookings online.
 
 As a **Site User**, I can log in to my account from any device so that I can access or update my bookings at any time.
@@ -89,36 +90,37 @@ As a **Site User**, I can delete my bookings myself so that I don’t need to co
 
 As a **Site User**, I can view the total number of clients booked per session so that I can manage capacity effectively.
 
-As a **Site User**, I can modify bookings through the admin panel in case a client needs assistance updating their booking.
+As a **Site Admin**, I can modify bookings through the admin panel in case a client needs assistance updating their booking.
 
-✅ EPIC: Contact the Therapy Centre
+**EPIC 3: Contact the Therapy Centre**
+
 As a **Site User**, I can easily find the therapy centre’s contact details so that I can reach out with questions or special requests.
 
 As a **Site User**, I can view the therapy centre’s opening hours so that I know the best times to contact them.
 
 As a **Site User**, I can fill out a contact form so that I can send inquiries without having to call or email separately.
 
-As a **Site User**, I can view all incoming messages from the contact form so that I can respond promptly.
+As a **Site Admin**, I can view all incoming messages from the contact form so that I can respond promptly.
 
-✅ EPIC: Locate the Therapy Centre
+**EPIC 4: Locate the Therapy Centre**
 
 As a **Site User**, I can find information about the therapy centre’s address so that I know where it is located.
 
 As a **Site User**, I can view a map of the therapy centre’s location so that I can navigate there by car, public transport, or on foot.
 
-✅ EPIC: View Available Sessions
+**EPIC 5: View Available Sessions**
 
 As a **Site User**, I can view a list of available sessions so that I can decide which one I would like to attend.
 
-As a Site Admin, I can easily update session details and pricing so that clients always have accurate, up-to-date information.
+As a **Site Admin**, I can easily update session details and pricing so that clients always have accurate, up-to-date information.
 
-✅ EPIC: Reviews
+**EPIC 6: Reviews**
 
 As a **Site User**, I can write a review of the therapy centre so that others can learn from my experience.
 
 As a **Site User**, I can read reviews from previous clients so that I can make an informed decision about booking a session.
 
-As a Site Admin, I can moderate and respond to reviews so that feedback is managed professionally and constructively.
+As a **Site Admin**, I can moderate and respond to reviews so that feedback is managed professionally and constructively.
 
 
 
