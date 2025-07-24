@@ -65,3 +65,15 @@ nav {
     padding: 20px 40px;
     max-width: 90%;
 }
+
+/*Enquiries page*/
+.contact-background {
+    height: 60vh;
+    background: url('../images/indianlivingroom.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
