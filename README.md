@@ -122,7 +122,19 @@ As a **Site User**, I can read reviews from previous clients so that I can make 
 
 As a **Site Admin**, I can moderate and respond to reviews so that feedback is managed professionally and constructively.
 
+### Wireframes
 
+Wireframes for both mobile devices and larger screens (such as tablets and desktop computers) were created using **Balsamiq and Microsoft Word**. The goal was to maintain a clean and straightforward design, with nearly every view having its own dedicated wireframe. This approach streamlined the development process, as the layout and structure were already clearly defined.
+
+I thoroughly enjoyed working on this stage of the project. While a few adjustments were made during development—particularly to improve responsiveness—I decided to keep all original wireframes unchanged as a reference to the initial design vision.
+
+**Examples**
+
+The first example below showcases the landing page as viewed on a desktop browser or large tablet. It highlights the navigation bar with all menu items visible, a prominent header image (jumbotron), and what I consider the two most essential buttons for a therapy’s website from a user perspective.
+
+![printscreen](/static/wireframes/main_landing_page.png)
+
+The next wireframe shows the landing page when a user scrolls further down on a desktop or large tablet. It includes a planned image gallery feature that would have been a valuable addition. Unfortunately, this feature was postponed in favor of higher-priority functionality that needed to be completed first.
 
 ## Features
 
