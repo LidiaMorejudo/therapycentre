@@ -134,7 +134,9 @@ The first example below showcases the landing page as viewed on a desktop browse
 
 ![printscreen](/static/wireframes/main_landing_page.png)
 
-The next wireframe shows the landing page when a user scrolls further down on a desktop or large tablet. It includes a planned image gallery feature that would have been a valuable addition. Unfortunately, this feature was postponed in favor of higher-priority functionality that needed to be completed first.
+These wireframes illustrate the mobile layout, designed to be clean and intuitive. A dropdown menu replaces the traditional navigation bar to maximize screen space, keeping the focus on the jumbotron, booking, and menu sections.
+
+The example Contact page provides visitors with key contact details and an easy-to-use form for direct inquiries.
 
 ## Features
 
