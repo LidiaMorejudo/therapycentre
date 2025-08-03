@@ -142,6 +142,8 @@ The example Contact page provides visitors with key contact details and an easy-
 
 The website uses a calm and natural colour palette to create a soothing and welcoming atmosphere appropriate for a therapy centre. The primary background colour is a soft, muted green (#d9e8cc), chosen to evoke feelings of calmness and peace. Buttons and interactive elements use Bootstrap’s neutral grey tones to maintain a clean, professional appearance without clashing with the primary background. Social media icons are styled in black for clear visibility and a minimalist aesthetic. This colour scheme aims to provide a gentle and reassuring user experience, reinforcing the centre’s commitment to comfort and care.
 
+![printscreen](/static/images/ColourScheme.png)
+
 ## Features
 
 ### Existing features
