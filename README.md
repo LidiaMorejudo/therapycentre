@@ -136,6 +136,8 @@ The first example below showcases the landing page as viewed on a desktop browse
 
 These wireframes illustrate the mobile layout, designed to be clean and intuitive. A dropdown menu replaces the traditional navigation bar to maximize screen space, keeping the focus on the jumbotron, booking, and menu sections.
 
+![printscreen](/static/wireframes/wireframes_mobiles_contactpage.png)
+
 The example Contact page provides visitors with key contact details and an easy-to-use form for direct inquiries.
 
 ### Colour scheme
