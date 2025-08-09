@@ -138,7 +138,9 @@ These wireframes illustrate the mobile layout, designed to be clean and intuitiv
 
 ![printscreen](/static/wireframes/wireframes_mobiles_contactpage.png)
 
-The example Contact page provides visitors with key contact details and an easy-to-use form for direct inquiries.
+For a complete overview of the project’s wireframes, please refer to the dedicated documentation. The main README provides only a brief visual summary to maintain clarity and brevity. To explore all wireframe designs, including detailed layouts, click the link below:
+
+[View Full Wireframes](docs/wireframes.md)
 
 ### Colour scheme
 
