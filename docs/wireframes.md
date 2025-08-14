@@ -10,3 +10,7 @@ Wireframes for both mobile devices and larger screens (such as tablets and deskt
 This wireframe presents the envisioned design and layout for the therapy session booking page:
 
 ![printscreen](/static/wireframes/book_a_session_page.png)
+
+This wireframe presents the planned design and leayout for the therapy sessions page contact page:
+
+![printscreen](/static/wireframes/wireframe_contact_page.png)
