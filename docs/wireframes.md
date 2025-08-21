@@ -11,6 +11,10 @@ This wireframe presents the envisioned design and layout for the therapy session
 
 ![printscreen](/static/wireframes/book_a_session_page.png)
 
-This wireframe presents the planned design and leayout for the therapy sessions page contact page:
+This wireframe presents the planned design and layout for the therapy sessions page contact page:
 
 ![printscreen](/static/wireframes/wireframe_contact_page.png)
+
+This wireframe presents the planned design and layout for the therapy sessions location page:
+
+![printscreen](/static/wireframes/location_page.png)
