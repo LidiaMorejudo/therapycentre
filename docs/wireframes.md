@@ -26,3 +26,7 @@ This wireframe presents the planned design and layout for the **therapy sessions
 This wireframe presents the planned design and layout for the **therapy mobile book a session page**:
 
 ![printscreen](/static/wireframes/wireframe_mobile_bookasession.png)
+
+This wireframe presents the planned design and layout for the **therapy mobile register and login page**:
+
+![printscreen](/static/wireframes/wireframe_mobile_registerloginpage.png)
