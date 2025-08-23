@@ -7,14 +7,14 @@ Therapy Centre is a serene and beautifully designed wellness resort located in t
 Wireframes for both mobile devices and larger screens (such as tablets and desktop computers) were created using **Balsamiq and Microsoft Word**. The goal was to maintain a clean and straightforward design, with nearly every view having its own dedicated wireframe. This approach streamlined the development process, as the layout and structure were already clearly defined.
 
 
-This wireframe presents the envisioned design and layout for the therapy session booking page:
+This wireframe presents the envisioned design and layout for the **therapy session booking page**:
 
 ![printscreen](/static/wireframes/book_a_session_page.png)
 
-This wireframe presents the planned design and layout for the therapy sessions page contact page:
+This wireframe presents the planned design and layout for the **therapy sessions page contact page**:
 
 ![printscreen](/static/wireframes/wireframe_contact_page.png)
 
-This wireframe presents the planned design and layout for the therapy sessions location page:
+This wireframe presents the planned design and layout for the **therapy sessions location page**:
 
 ![printscreen](/static/wireframes/location_page.png)
