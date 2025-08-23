@@ -18,3 +18,7 @@ This wireframe presents the planned design and layout for the **therapy sessions
 This wireframe presents the planned design and layout for the **therapy sessions location page**:
 
 ![printscreen](/static/wireframes/location_page.png)
+
+This wireframe presents the planned design and layout for the **therapy sessions page**:
+
+![printscreen](/static/wireframes/wireframe_sessions_page.png)
