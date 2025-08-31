@@ -30,3 +30,7 @@ This wireframe presents the planned design and layout for the **therapy mobile b
 This wireframe presents the planned design and layout for the **therapy mobile register and login page**:
 
 ![printscreen](/static/wireframes/wireframe_mobile_registerloginpage.png)
+
+This wireframe presents the planned design and layout for the **therapy register and login page**:
+
+![printscreen](/static/wireframes/registration_login_page.png)
