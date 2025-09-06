@@ -51,3 +51,24 @@
 
 
 {% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            const modalElement = document.getElementById('bookingconfirmationModal');
+            if (modalElement) {
+                var confirmationModal = new bootstrap.Modal(modalElement);
+                confirmationModal.show();
+
+                urlParams.delete('success');
+                window.history.replaceState({}, document.title, window.location.pathname + (urlParams
+                .toString() ? '?' + urlParams.toString() : ''));
+            } else {
+                console.error('Modal element not found');
+            }
+        }
+    });
+</script>
+{% endblock scripts %}
