@@ -19,8 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),  # Routes root URL to your core app
-    path('', include('inquiries.urls')),     # Now includes 'enquiries/' URL
-    path('booking/', include('booking.urls')), #My booking app
+    path('', include('core.urls')),             # homepage, sessions, etc.
+    path('inquiries/', include('inquiries.urls')), # inquiries is mounted at /inquiries/
+    path('booking/', include('booking.urls')),  # mounted at /booking/
 ]
 
