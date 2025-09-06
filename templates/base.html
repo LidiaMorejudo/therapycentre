@@ -77,6 +77,14 @@
                                     Find us
                                 </a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == booking_url %}active{% endif %}" 
+                                    href="{{ booking_url }}" 
+                                    {% if request.path == booking_url %}aria-current="page"{% endif %}>
+                                    Book a Session
+                                </a>
+                            </li>
                         </ul>
 
 
