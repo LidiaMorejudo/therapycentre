@@ -148,6 +148,12 @@ The website uses a calm and natural colour palette to create a soothing and welc
 
 ![printscreen](/static/images/ColourScheme.png)
 
+### Project planning
+
+
+### Agile methodologies
+
+
 ## Features
 
 ### Existing features
