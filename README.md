@@ -153,6 +153,29 @@ The website uses a calm and natural colour palette to create a soothing and welc
 
 ### Agile methodologies
 
+Agile Methodologies in My Project
+
+Excel Planning Board – I used Excel to plan and organize the Yoga Therapy Centre project. Each issue was written as a User Story with clear Acceptance Criteria. To make sure I understood the scope of each story, I also broke them down into smaller tasks. Along the way, I had to revisit the sheet, refine, and add new User Stories. This process highlighted for me the value of an iterative Agile approach.
+
+The User Stories helped me stay focused on ensuring the essential functionality of the site came first, with design as an enhancement rather than the main priority.
+
+Epics – I see the value of Epics in larger projects, since they give a clearer overview of related User Stories and help with prioritization. For a project of this size, Epics might be more than necessary, but the structure still helps me organize my work and thinking.
+
+MoSCoW Prioritization – To keep priorities clear, each User Story was categorized using the MoSCoW methodology:
+
+Must Have: Essential features required for the Yoga Therapy Centre website to function and serve its core purpose.
+
+Should Have: Important features that add value but are not critical for basic functionality.
+
+Could Have: Nice-to-have features that can be developed if time and resources allow.
+
+Won’t Have (this time): Features intentionally left out of this version but considered for possible future development.
+
+
+
+
+An important note: some features that I consider essential for a Yoga Therapy Centre’s website and booking system (and therefore labeled as Must Have) were not implemented in this iteration. They didn’t even reach the “In Progress” stage in Excel. This was intentional, as my main focus for this project is on building a smooth and supportive user experience for clients. Administrative and back-office functionality is something I would be very interested in exploring in future versions of the project.
+
 
 ## Features
 
