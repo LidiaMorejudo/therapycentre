@@ -172,7 +172,7 @@ Could Have: Nice-to-have features that can be developed if time and resources al
 Won’t Have (this time): Features intentionally left out of this version but considered for possible future development.
 
 
-
+![printscreen](/static/images/agile.png)
 
 An important note: some features that I consider essential for a Yoga Therapy Centre’s website and booking system (and therefore labeled as Must Have) were not implemented in this iteration. They didn’t even reach the “In Progress” stage in Excel. This was intentional, as my main focus for this project is on building a smooth and supportive user experience for clients. Administrative and back-office functionality is something I would be very interested in exploring in future versions of the project.
 
