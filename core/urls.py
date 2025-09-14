@@ -5,6 +5,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('findus/', views.findus, name='findus'),
     path('sessions/', views.sessions, name='sessions'),
-    path('booking/', views.booking_view, name='booking'),
 ]
 
