@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <h1>Your Reservations</h1>
+            <div class="reservation-grid mt-4">
+                {% for booking in bookings %}
+                <div class="grid-item">
+                    <strong>Name:</strong> {{ booking.lastname }}<br>
+                    <strong>Email:</strong> {{ booking.email }}<br>
+                    <strong>Date:</strong> {{ booking.date }}<br>
+                    <strong>Time:</strong> {{ booking.time }}<br>
+                    <strong>Number of guests:</strong> {{ booking.guests }}<br>
+                    <div id="booking-row-{{ booking.id }}" class="text-center mt-2">
+                        <a class="btn btn-outline-secondary btn-edit btn-sm" href="{% url 'booking_edit' booking.id %}">Edit</a>
+                        <a href="{% url 'booking_delete' booking.id %}" class="btn btn-outline-secondary btn-delete btn-sm"
+                            data-booking-id="{{ booking.id }}">Delete</a>
+                    </div>
+                </div>
+                {% empty %}
+                <div>No reservations found</div>
+                {% endfor %}
+            </div>
+            <button class="btn btn-secondary align-item-center mt-4" type="button">
+                <a href="{% url 'booking' %}" class="text-white">New Reservation</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
