@@ -6,8 +6,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12 text-center mt-5">
-            <h1>Reservation deleted!</h1>
-            <p>Your reservation has been successfully deleted.</p>
+            <h1>Booking cancelled!</h1>
+            <p>Your booking has been successfully cancelled.</p>
             <form method="post">
                 {% csrf_token %}
                 <button class="btn btn-secondary"><a href="{% url 'booking_list' %}">Close</a></button>
