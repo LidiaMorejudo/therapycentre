@@ -6,8 +6,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12 text-center mt-5">
-            <h1>Delete Reservation</h1>
-            <p>Are you sure you want to delete the reservation for {{ booking.date }} at {{ booking.time }}?</p>
+            <h1>Cancel booking</h1>
+            <p>Are you sure you want to cancel the booking for {{ booking.date }} at {{ booking.time }}?</p>
             <form method="post">
                 {% csrf_token %}
                 <button type="submit" class="btn btn btn-secondary">Delete</button>
