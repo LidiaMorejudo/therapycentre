@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <h1>Booking updated!</h1>
+            <p>Your booking has been successfully updated.</p>
+            <p>See you at the session!</p>
+            <form method="post">
+                {% csrf_token %}
+                <button class="btn btn-secondary"><a href="{% url 'booking_list' %}">Close</a></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
