@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <h1>Delete Reservation</h1>
+            <p>Are you sure you want to delete the reservation for {{ booking.date }} at {{ booking.time }}?</p>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn btn-secondary">Delete</button>
+                <button class="btn btn-secondary"><a href="{% url 'booking_list' %}">Cancel</a></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
