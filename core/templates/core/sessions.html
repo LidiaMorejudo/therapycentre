@@ -3,15 +3,56 @@
 
 {% block content %}
 
-This will be where the information about the yoga therapy sessions will be.
-
+<!-- Buttons for session options -->
 <div class="container">
     <div class="row">
         <div class="col-12 menu-header text-center">
                 <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-                    data-bs-target="#foodMenuModal">Yoga Sessions</button>
+                    data-bs-target="#YogaSessionsModal">Yoga Sessions</button>
                 <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-                    data-bs-target="#drinkMenuModal">Yoga Therapy Sessions</button>    
+                    data-bs-target="#YogaTherapySessionsModal">Yoga Therapy Sessions</button>    
+        </div>
+
+        <!-- Modal for Yoga Sessions -->
+        <div class="modal fade " id="YogaSessionsModal" tabindex="-1" aria-labelledby="YogaSessionsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="YogaSessionsModalLabel">Yoga Sessions</h1>
+                        <button type="button" class="btn-close text-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Yoga Sessions</h2>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary text-center" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Yoga Therapy Sessions -->
+        <div class="modal fade" id="YogaTherapySessionsModal" tabindex="-1" aria-labelledby="YogaTherapySessionsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="YogaTherapySessionsModalLabel">Yoga Therapy Sessions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Yoga Therapy Sessions</h2>
+
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
         </div>
 
     </div>
