@@ -1,6 +1,6 @@
 from django.db import models
 
-class Enquiry(models.Model):
+class Inquiries(models.Model):
     subject = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
     email = models.EmailField()
@@ -8,5 +8,5 @@ class Enquiry(models.Model):
     read = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Enquiry from {self.name}"
+        return f"Inquiries from {self.name}"
 
