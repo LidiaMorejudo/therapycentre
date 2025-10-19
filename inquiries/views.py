@@ -10,5 +10,9 @@ def inquiries_view(request):
     else:
         form = EnquiryForm()
 
-    return render(request, 'inquiries/enquiries.html', {'enquiry_form': form})
+    return render(request, 'inquiries/enquiries.html', 
+                  {
+                      'enquiry_form': form
+                      },
+    )
 
