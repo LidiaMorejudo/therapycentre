@@ -3,45 +3,46 @@
 
 {% block content %}
 
-<!-- Buttons for session options -->
-<div class="container">
-    <div class="row">
-        <div class="col-12 menu-header text-center">
-                <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-                    data-bs-target="#YogaSessionsModal">Yoga Sessions</button>
-                <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-                    data-bs-target="#YogaTherapySessionsModal">Yoga Therapy Sessions</button>    
-        </div>
+<!-- Session header with background image -->
+<div class="session-header text-center">
+    <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
+        data-bs-target="#YogaSessionsModal">Yoga Sessions</button>
+    <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
+        data-bs-target="#YogaTherapySessionsModal">Yoga Therapy Sessions</button>    
+</div>
 
-        <!-- Modal for Yoga Sessions -->
-        <div class="modal fade " id="YogaSessionsModal" tabindex="-1" aria-labelledby="YogaSessionsModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title" id="YogaSessionsModalLabel">Yoga Sessions</h1>
-                        <button type="button" class="btn-close text-center" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h2>Yoga Sessions for adults and seniors</h2>
-                        <h5>Monday to Friday 45 min sessions </h5>
-                        <p>Classes from 1pm until 9pm </p>
-                        <h2>Yoga Sessions for adults and seniors</h2>
-                        <h5>Saturday 45 min sessions </h5>
-                        <p>Classes from 9am until 2pm </p>
-                        <h2>Yoga Sessions for teens and adults</h2>
-                        <h5>Saturday 45 min sessions </h5>
-                        <p>Classes from 2pm until 4pm </p>                        
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary text-center" data-bs-dismiss="modal">Close</button>
-                    </div>
+<!-- Buttons modals inside container -->
+<div class="container">
+
+    <!-- Modal for Yoga Sessions -->
+    <div class="modal fade" id="YogaSessionsModal" tabindex="-1" aria-labelledby="YogaSessionsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="YogaSessionsModalLabel">Yoga Sessions</h1>
+                    <button type="button" class="btn-close text-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Yoga Sessions for adults and seniors</h2>
+                    <h5>Monday to Friday 45 min sessions </h5>
+                    <p>Classes from 1pm until 9pm </p>
+                    <h2>Yoga Sessions for adults and seniors</h2>
+                    <h5>Saturday 45 min sessions </h5>
+                    <p>Classes from 9am until 2pm </p>
+                    <h2>Yoga Sessions for teens and adults</h2>
+                    <h5>Saturday 45 min sessions </h5>
+                    <p>Classes from 2pm until 4pm </p>                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal for Yoga Therapy Sessions -->
-        <div class="modal fade" id="YogaTherapySessionsModal" tabindex="-1" aria-labelledby="YogaTherapySessionsModalLabel"
+    <!-- Modal for Yoga Therapy Sessions -->
+    <div class="modal fade" id="YogaTherapySessionsModal" tabindex="-1" aria-labelledby="YogaTherapySessionsModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -50,33 +51,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                        <h2>Yoga Therapy Sessions</h2>
-                        <h5>Monday to Friday 45 min sessions </h5>
-                        <p>All our yoga sessions are Yoga Therapy Sessions</p>
-                        <p>Below you will find information about the tutors</p>
-                        <h2>Yoga Sessions for adults and seniors</h2>
-                        <h5>Milena Polotov </h5>
-                        <h5>Matthew Beready </h5>
-                        <h5>Guru Bendananda </h5>                        
-                        <h5>Verity Flexible </h5>
-                        <h5>Mepika El Kulo </h5>     
-                        <h5>Soee Mooee Flaiksible </h5>
-                        <h5>Maighoosta Maideeter </h5>    
-                        <h5>Flexandra Namasteson </h5>                                            
-                        <h2>Yoga Sessions for teens and adults</h2>
-                        <h5>Milena Polotov </h5>
-                        <h5>Mepika El Kulo </h5>     
-                        <h5>Soee Mooee Flaiksible </h5>
-                  
+                    <h2>Yoga Therapy Sessions</h2>
+                    <h5>Monday to Friday 45 min sessions </h5>
+                    <p>All our yoga sessions are Yoga Therapy Sessions</p>
+                    <p>Below you will find information about the tutors</p>
+                    <h2>Yoga Sessions for adults and seniors</h2>
+                    <h5>Milena Polotov </h5>
+                    <h5>Matthew Beready </h5>
+                    <h5>Guru Bendananda </h5>                        
+                    <h5>Verity Flexible </h5>
+                    <h5>Mepika El Kulo </h5>     
+                    <h5>Soee Mooee Flaiksible </h5>
+                    <h5>Maighoosta Maideeter </h5>    
+                    <h5>Flexandra Namasteson </h5>                                            
+                    <h2>Yoga Sessions for teens and adults</h2>
+                    <h5>Milena Polotov </h5>
+                    <h5>Mepika El Kulo </h5>     
+                    <h5>Soee Mooee Flaiksible </h5>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        </div>
-
     </div>
-</div>
 
+</div>
 {% endblock %}
