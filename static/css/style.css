@@ -77,3 +77,20 @@ nav {
     position: relative;
     margin: auto;
 }
+
+/* Yoga Sessions page header */
+.session-header {
+    height: 60vh; /* adjust as needed */
+    background: url('/static/images/header_background_main_page.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.session-header .menu-btn {
+    margin: 10px;
+}
+
