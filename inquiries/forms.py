@@ -1,17 +1,17 @@
 from django import forms
-from .models import Enquiry
+from .models import Inquiries
 
 
-class EnquiryForm(forms.ModelForm):
+class InquiriesForm(forms.ModelForm):
     """
-    Form for creating and sending enquiries to the therapy centre.
+    Form for creating and sending inquiries to the therapy centre.
     Connected to the admin panel for management.
     Contains fields for:
-        subject (str) - subject of the enquiry.
-        name (str) - name of the person submitting the enquiry.
+        subject (str) - subject of the inquiry.
+        name (str) - name of the person submitting the inquiry.
         email (EmailField) - contact email of the person.
-        message (str) - the enquiry content.
+        message (str) - the inquiry content.
     """
     class Meta:
-        model = Enquiry
+        model = Inquiries
         fields = ('subject', 'name', 'email', 'message')
