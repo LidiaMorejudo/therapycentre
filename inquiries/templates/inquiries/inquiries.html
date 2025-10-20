@@ -18,21 +18,19 @@
                 <h6>Sunday: Closed</h6>
             </div>
         </div>
+        <div class="col-12 col-md-6 my-5">
+            <h1>If you have any question</h1>
+            <p>Complete this form to get in touch. One of the team will get in touch.</p>
+
+            <!-- Replace placeholder with actual form -->
+            <form method="post">
+                {% csrf_token %}
+                {{ inquiries_form|crispy }}
+                <button class="btn btn-secondary" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-</div>
-
-<div class="col-12 col-md-6 my-5">
-    <h1>If you have any question</h1>
-    <p>Complete this form to get in touch. One of the team will get in touch.</p>
-
-    <!-- Replace placeholder with actual form -->
-<form method="post">
-    {% csrf_token %}
-    {{ inquiries_form|crispy }}
-    <button class="btn btn-secondary" type="submit">Submit</button>
-</form>
-
-</div>
+</div>    
 
 <!-- Contact confirmation Modal -->
 <div class="modal fade" id="contactconfirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
