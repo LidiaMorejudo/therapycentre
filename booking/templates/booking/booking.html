@@ -4,27 +4,31 @@
 
 {% block content %}
 
-<div class="col-12 col-md-6 my-5">
-    <h2>Book a Therapy Session</h2>
-    <p>Please fill in the form to book your therapy session.</p>
-    <p>Read our <a href="#session-policy">Session Policy</a> before confirming your booking.</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5 text-center">
+            <h2>Book a Therapy Session</h2>
+            <p>Please fill in the form to book your therapy session.</p>
+            <p>Read our <a href="#session-policy">Session Policy</a> before confirming your booking.</p>
 
-    <!-- Booking form -->
-    <form id="bookingForm" method="post">
-        {% csrf_token %}
-        {{ booking_form.media }}
-        {{ booking_form|crispy }}
-        <button class="btn btn-secondary" type="submit">Book Session</button>
-    </form>
-</div>
+            <!-- Booking form -->
+            <form id="bookingForm" method="post" class="text-start">
+                {% csrf_token %}
+                {{ booking_form.media }}
+                {{ booking_form|crispy }}
+                <button class="btn btn-secondary" type="submit">Book Session</button>
+            </form>
+        </div>
+    </div>
 
-<div class="row justify-content-center">
-    <div class="col-12 col-md-6 contact-background">
-        <div class="callout text-center" id="session-policy">
-            <h2>Session Policy:</h2>
-            <p>Please arrive on time for your appointment. Sessions typically last 50 minutes.</p>
-            <p>If you need to cancel or reschedule, kindly give at least 24 hours’ notice.</p>
-            <p>Confidentiality is maintained at all times unless there is a risk of harm to yourself or others.</p>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 contact-background">
+            <div class="callout text-center" id="session-policy">
+                <h2>Session Policy:</h2>
+                <p>Please arrive on time for your appointment. Sessions typically last 50 minutes.</p>
+                <p>If you need to cancel or reschedule, kindly give at least 24 hours’ notice.</p>
+                <p>Confidentiality is maintained at all times unless there is a risk of harm to yourself or others.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -48,9 +52,8 @@
     </div>
 </div>
 
-
-
 {% endblock %}
+
 
 {% block scripts %}
 <script>
