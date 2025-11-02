@@ -3,6 +3,15 @@ body {
     background-color: #d9e8cc;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+
+    /* Footer positioning */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* ensures footer stays at bottom if body has little content */
 }
 
 .container {
@@ -93,4 +102,34 @@ nav {
 .session-header .menu-btn {
     margin: 10px;
 }
+
+/* Map page layout */
+
+.map {
+    height: 50vh;
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.findus-text {
+    background-color: rgba(217, 232, 204, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.findus-header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/location-background.png') no-repeat center center;
+    background-size: cover;
+}
+
+
 
