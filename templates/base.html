@@ -144,9 +144,29 @@
     </div>
 
 
-        <main>
-            {% block content %}{% endblock %}
-        </main>
+    <main>
+        <!-- Logged in/logged out info -->
+        <div class="container">
+            <div class="row">
+                {% if user.is_authenticated %}
+                <p class="text-end">You are logged in as {{ user }}</p>
+                {% else %}
+                <p class="text-end">You are not logged in</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+        {% block content %}
+        
+        {% endblock %}
+
+        {% block scripts %}
+
+        {% endblock scripts %}
+
+
+    </main>
     
 
         <!-- Footer content -->
