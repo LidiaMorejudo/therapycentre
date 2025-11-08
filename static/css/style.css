@@ -106,7 +106,7 @@ nav {
 /* Map page layout */
 
 .map {
-    height: 60vh;
+    height: 50vh;
     padding: 0;
 }
 
@@ -117,19 +117,31 @@ nav {
 }
 
 .findus-text {
-    background-color: rgba(217, 232, 204, 0.8);
+    background-color: rgba(255,236,236,0.8);
     padding: 20px;
-    text-align: center;
 }
 
 .findus-header {
-    height: 60vh;
+    height: 50vh;
+    background: url('/static/images/yoga_master.png') no-repeat center center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/static/images/location-background.png') no-repeat center center;
-    background-size: cover;
+    position: relative;
+    margin: auto;
+    padding: 0;
 }
 
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+    .findus-header {
+        height: 40vh;
+    }
+    .findus-text {
+        padding: 10px;
+        max-width: 95%;
+    }
+}
 
 
