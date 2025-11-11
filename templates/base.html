@@ -145,6 +145,12 @@
 
 
     <main>
+
+        
+        {% block content %}
+        
+        {% endblock %}
+
         <!-- Logged in/logged out info -->
         <div class="container">
             <div class="row">
@@ -157,9 +163,6 @@
         </div>
 
 
-        {% block content %}
-        
-        {% endblock %}
 
         {% block scripts %}
 
