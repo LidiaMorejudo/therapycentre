@@ -22,10 +22,10 @@
             <p>Read our <a href="#session-policy">Session Policy</a> before confirming your booking.</p>
 
             <!-- Booking form -->
-            <form id="bookingForm" method="post" class="text-start">
+           
+            <form id="bookingForm" method="post" action="{% url 'booking' %}">
                 {% csrf_token %}
-                {{ booking_form.media }}
-                {{ booking_form|crispy }}
+                {{ form|crispy }}
                 <button class="btn btn-secondary" type="submit">Book Session</button>
             </form>
         </div>
