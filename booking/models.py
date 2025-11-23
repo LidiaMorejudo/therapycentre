@@ -129,4 +129,3 @@ class BookASession(models.Model):
     ]
 
 
-# Create your models here.
