@@ -1,0 +1,10 @@
+<h2>My Bookings</h2>
+
+{% for b in bookings %}
+    <div>
+        <p>{{ b.date }} at {{ b.time }} — {{ b.students }} students</p>
+        <a href="{% url 'edit_booking' b.id %}">Edit</a>
+    </div>
+{% empty %}
+    <p>You have no bookings.</p>
+{% endfor %}
