@@ -4,10 +4,9 @@ from . import views
 urlpatterns = [
     # Booking
     path('', views.book_session, name='booking'),  # Create a booking
-    path('list/', views.booking_list, name='booking_list'),  # List of bookings
-    
-    path('edit/<int:booking_id>/', views.booking_edit, name='booking_edit'),  # Edit booking
-    path('delete/<int:booking_id>/', views.booking_delete, name='booking_delete'),  # Delete booking
+    path('my-bookings/', views.my_bookings, name='my_bookings'),  # User's bookings
+    path('edit-booking/<int:pk>/', views.edit_booking, name='edit_booking'),  # Edit booking
+    path('delete-booking/<int:pk>/', views.delete_booking, name='delete_booking'),  # Delete booking
 
     # User account / registration
     path('signup/', views.signup, name='signup'),  # User registration
