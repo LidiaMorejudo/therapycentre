@@ -5,6 +5,9 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from .forms import BookASessionForm
 from .models import BookASession
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 def book_session(request):
     """
@@ -105,4 +108,37 @@ def booking_delete_confirmation(request):
     """
     return render(request, 'booking/booking_delete_confirmation.html')
 
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')  # Django's built-in login URL name
+    else:
+        form = UserCreationForm()
+    
+    return render(request, 'registration/signup.html', {'form': form})
 
+@login_required
+def my_bookings(request):
+    bookings = BookASession.objects.filter(user=request.user).order_by('-date', '-time')
+    return render(request, 'my_bookings.html', {'bookings': bookings})
+
+from django.core.exceptions import PermissionDenied
+
+@login_required
+def edit_booking(request, pk):
+    booking = BookASession.objects.get(pk=pk)
+    
+    if booking.user != request.user:
+        raise PermissionDenied()  # 🚫 Prevent editing someone else's booking
+    
+    if request.method == 'POST':
+        form = BookASessionForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('my_bookings')
+    else:
+        form = BookASessionForm(instance=booking)
+
+    return render(request, 'edit_booking.html', {'form': form})
