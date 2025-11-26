@@ -120,13 +120,6 @@ def signup(request):
     return render(request, 'registration/signup.html', {'form': form})
 
 @login_required
-def my_bookings(request):
-    bookings = BookASession.objects.filter(user=request.user).order_by('-date', '-time')
-    return render(request, 'my_bookings.html', {'bookings': bookings})
-
-from django.core.exceptions import PermissionDenied
-
-@login_required
 def edit_booking(request, pk):
     booking = BookASession.objects.get(pk=pk)
     
