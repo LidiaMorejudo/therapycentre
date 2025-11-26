@@ -9,7 +9,7 @@ from .models import BookASession
 def book_session(request):
     """
     Handles creation of a new session booking.
-    If POST: save booking, assign user, redirect to my bookings.
+    If POST: save booking, assign user if logged in, redirect to user's bookings.
     If GET: show empty booking form.
     """
     if request.method == "POST":
@@ -19,12 +19,12 @@ def book_session(request):
             if request.user.is_authenticated:
                 booking.user = request.user
             booking.save()
-            return redirect('booking_list')  # or 'my_bookings', depending on your setup
+            messages.success(request, "Booking successfully created!")
+            return redirect('my_bookings')
         else:
             messages.error(
                 request,
-                "There was an error with your reservation request. "
-                "Please check the form and try again."
+                "There was an error with your reservation request. Please check the form and try again."
             )
     else:
         booking_form = BookASessionForm()
@@ -33,45 +33,48 @@ def book_session(request):
 
 
 @login_required
-def booking_list(request):
+def my_bookings(request):
     """
-    Shows all bookings made by the logged-in user.
+    Show bookings for the logged-in user.
     """
     bookings = BookASession.objects.filter(user=request.user).order_by('-date', '-time')
-    return render(request, 'booking/booking_list.html', {'bookings': bookings})
+    return render(request, 'registration/mybookings.html', {'bookings': bookings})
 
 
 @login_required
-def booking_edit(request, booking_id):
+def edit_booking(request, pk):
     """
-    Edit a user’s existing booking.
+    Edit an existing booking for the logged-in user.
     """
-    booking = get_object_or_404(BookASession, id=booking_id, user=request.user)
+    booking = get_object_or_404(BookASession, pk=pk, user=request.user)
 
     if request.method == "POST":
         form = BookASessionForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            return redirect('booking_list')
-        messages.error(request, "There was an error updating your booking.")
+            messages.success(request, "Booking successfully updated!")
+            return redirect('my_bookings')
+        else:
+            messages.error(request, "There was an error updating your booking.")
     else:
         form = BookASessionForm(instance=booking)
 
-    return render(request, 'booking/booking_edit.html', {'form': form, 'booking': booking})
+    return render(request, 'registration/edit_booking.html', {'form': form})
 
 
 @login_required
-def booking_delete(request, booking_id):
+def delete_booking(request, pk):
     """
-    Delete a user’s existing booking.
+    Delete an existing booking for the logged-in user.
     """
-    booking = get_object_or_404(BookASession, id=booking_id, user=request.user)
+    booking = get_object_or_404(BookASession, pk=pk, user=request.user)
 
     if request.method == "POST":
         booking.delete()
-        return redirect('booking_list')
+        messages.success(request, "Booking successfully deleted!")
+        return redirect('my_bookings')
 
-    return render(request, 'booking/booking_delete.html', {'booking': booking})
+    return render(request, 'registration/delete_booking.html', {'booking': booking})
 
 
 def signup(request):
@@ -82,7 +85,10 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Account created! Please log in.")
             return redirect('login')
+        else:
+            messages.error(request, "There was an error with sign-up. Please check the form.")
     else:
         form = UserCreationForm()
 
