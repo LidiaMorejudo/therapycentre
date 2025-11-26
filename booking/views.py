@@ -119,19 +119,3 @@ def signup(request):
     
     return render(request, 'registration/signup.html', {'form': form})
 
-@login_required
-def edit_booking(request, pk):
-    booking = BookASession.objects.get(pk=pk)
-    
-    if booking.user != request.user:
-        raise PermissionDenied()  # 🚫 Prevent editing someone else's booking
-    
-    if request.method == 'POST':
-        form = BookASessionForm(request.POST, instance=booking)
-        if form.is_valid():
-            form.save()
-            return redirect('my_bookings')
-    else:
-        form = BookASessionForm(instance=booking)
-
-    return render(request, 'edit_booking.html', {'form': form})
