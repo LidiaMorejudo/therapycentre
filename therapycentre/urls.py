@@ -24,9 +24,6 @@ urlpatterns = [
     path('inquiries/', include('inquiries.urls')), # inquiries is mounted at /inquiries/
     path('booking/', include('booking.urls')),  # mounted at /booking/
 
-     # Authentication
-    path('accounts/', include('django.contrib.auth.urls')),  # login/logout/password reset
-    path('signup/', booking_views.signup, name='signup'),    # user registration
-    path('', include('booking.urls')),
+
 ]
 
