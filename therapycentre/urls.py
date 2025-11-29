@@ -19,10 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),             # homepage, sessions, etc.
-    path('inquiries/', include('inquiries.urls')), # inquiries is mounted at /inquiries/
     path('booking/', include('booking.urls')),  # mounted at /booking/
-
-
+    path('inquiries/', include('inquiries.urls')), # inquiries is mounted at /inquiries/
+    path('summernote/', include('django_summernote.urls')),
+    path('', include('core.urls')),             # homepage, sessions, etc.
 ]
 
