@@ -2,13 +2,13 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Booking
-    path('', views.book_session, name='booking'),  # Create a booking
-    path('my-bookings/', views.my_bookings, name='my_bookings'),  # User's bookings
-    path('edit-booking/<int:pk>/', views.edit_booking, name='edit_booking'),  # Edit booking
-    path('delete-booking/<int:pk>/', views.delete_booking, name='delete_booking'),  # Delete booking
+    path('', views.book_session, name='booking'),  # main booking page
+    path('my-bookings/', views.booking_list, name='booking_list'),  # list of user's bookings
 
-    # User account / registration
-    path('signup/', views.signup, name='signup'),  # User registration
+    path('edit/<int:booking_id>/', views.edit_booking, name='edit_booking'),
+    path('edit/confirmation/', views.edit_booking_confirmation, name='edit_booking_confirmation'),
+
+    path('delete/<int:booking_id>/', views.delete_booking, name='delete_booking'),
+    path('delete/confirmation/', views.delete_booking_confirmation, name='delete_booking_confirmation'),
 ]
 
