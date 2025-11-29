@@ -34,7 +34,7 @@ def book_session(request):
 
 
 @login_required
-def my_bookings(request):
+def booking_list(request):
     """
     Show bookings for the logged-in user.
     """
