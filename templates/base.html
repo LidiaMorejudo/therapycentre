@@ -5,6 +5,9 @@
 {% url 'findus' as findus_url %}
 {% url 'sessions' as sessions_url %}
 {% url 'booking' as booking_url %}
+{% url 'my_bookings' as my_bookings_url %}
+{% url 'edit_booking' as edit_booking_url %}
+{% url 'delete_booking' as delete_booking_url %}
 {% url 'inquiries' as inquiries_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
@@ -115,6 +118,41 @@
                         </ul>
 
 
+                        <!-- User login, logout, and registration -->
+                        <ul class="navbar-nav ms-auto">
+                            {% if user.is_authenticated %}
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == booking_list_url %}active{% endif %}" 
+                                     href="{% url 'booking_list' %}" 
+                                    {% if request.path == booking_list_url %}aria-current="page"{% endif %}>
+                                    My Reservations
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == logout_url %}active{% endif %}" 
+                                    href="{% url 'account_logout' %}" 
+                                    {% if request.path == logout_url %}aria-current="page"{% endif %}>
+                                    Logout
+                                </a>
+                            </li>
+                            {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" 
+                                    href="{% url 'account_signup' %}" 
+                                    {% if request.path == signup_url %}aria-current="page"{% endif %}>
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == login_url %}active{% endif %}" 
+                                    href="{% url 'account_login' %}" 
+                                    {% if request.path == login_url %}aria-current="page"{% endif %}>
+                                    Sign In
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+
                     </div>
                 </nav>
             </div>
@@ -180,4 +218,3 @@
 
 </body>
 </html>
-
