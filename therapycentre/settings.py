@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'booking',
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
