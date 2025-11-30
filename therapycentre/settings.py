@@ -113,3 +113,6 @@ ACCOUNT_EMAIL_VERIFICATION = 'optional'
 # Redirects after login/logout
 LOGIN_REDIRECT_URL = '/'      # redirect after login
 LOGOUT_REDIRECT_URL = '/'     # redirect after logout
+
+# Only for development
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
