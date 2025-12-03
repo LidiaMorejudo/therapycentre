@@ -94,3 +94,4 @@ class BookASessionForm(forms.ModelForm):
                     "No available spaces in this session.")
 
         return cleaned_data
+    
