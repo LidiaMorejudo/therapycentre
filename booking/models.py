@@ -127,5 +127,3 @@ class BookASession(models.Model):
                 fields=['date', 'time', 'user'],
                 name='unique_booking_per_user_per_time')
     ]
-
-
