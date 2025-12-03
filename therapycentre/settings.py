@@ -105,10 +105,15 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 SITE_ID = 1
 
 # Allauth configuration
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",      # needed for admin
+    "allauth.account.auth_backends.AuthenticationBackend",  # allauth
+]
+
+ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+ACCOUNT_EMAIL_VERIFICATION = "optional"
 
 # Redirects after login/logout
 LOGIN_REDIRECT_URL = '/'      # redirect after login
