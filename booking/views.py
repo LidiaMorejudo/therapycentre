@@ -79,7 +79,7 @@ def delete_booking(request, booking_id):
 
     if request.method == "POST":
         booking.delete()
-        return redirect('booking_delete_confirmation')
+        return redirect('delete_booking_confirmation')
 
     return render(request, 'booking/booking_delete.html', {'booking': booking})
 
