@@ -16,7 +16,7 @@
                     <strong>Time:</strong> {{ booking.time }}<br>
                     <strong>Number of guests:</strong> {{ booking.guests }}<br>
                     <div id="booking-row-{{ booking.id }}" class="text-center mt-2">
-                        <a class="btn btn-outline-secondary btn-edit btn-sm" href="{% url 'booking_edit' booking.id %}">Edit</a>
+                        <a class="btn btn-outline-secondary btn-edit btn-sm" href="{% url 'edit_booking' booking_id=booking.id %}">Edit</a>
                         <a href="{% url 'booking_delete' booking.id %}" class="btn btn-outline-secondary btn-delete btn-sm"
                             data-booking-id="{{ booking.id }}">Delete</a>
                     </div>
