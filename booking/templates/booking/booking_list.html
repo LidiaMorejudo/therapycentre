@@ -14,7 +14,7 @@
                     <strong>Email:</strong> {{ booking.email }}<br>
                     <strong>Date:</strong> {{ booking.date }}<br>
                     <strong>Time:</strong> {{ booking.time }}<br>
-                    <strong>Number of students:</strong> {{ booking.guests }}<br>
+                    <strong>Number of students:</strong> {{ booking.students }}<br>
                     <div id="booking-row-{{ booking.id }}" class="text-center mt-2">
                         <a class="btn btn-outline-secondary btn-edit btn-sm" href="{% url 'edit_booking' booking_id=booking.id %}">Edit</a>
                         <a href="{% url 'delete_booking' booking_id=booking.id %}" class="btn btn-outline-secondary btn-delete btn-sm"
