@@ -59,7 +59,7 @@ def edit_booking(request, booking_id):
     else:
         form = BookASessionForm(instance=booking)
 
-    return render(request, 'booking/edit_booking.html', {'form': form, 'booking': booking})
+    return render(request, 'booking/booking_edit.html', {'form': form, 'booking': booking})
 
 
 @login_required
@@ -67,7 +67,7 @@ def edit_booking_confirmation(request):
     """
     Confirmation page after editing a booking.
     """
-    return render(request, 'booking/edit_booking_confirmation.html')
+    return render(request, 'booking/booking_edit_confirmation.html')
 
 
 @login_required
