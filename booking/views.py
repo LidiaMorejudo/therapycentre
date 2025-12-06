@@ -79,9 +79,9 @@ def delete_booking(request, booking_id):
 
     if request.method == "POST":
         booking.delete()
-        return redirect('delete_booking_confirmation')
+        return redirect('booking_delete_confirmation')
 
-    return render(request, 'booking/delete_booking.html', {'booking': booking})
+    return render(request, 'booking/booking_delete.html', {'booking': booking})
 
 
 @login_required
@@ -89,4 +89,4 @@ def delete_booking_confirmation(request):
     """
     Confirmation page after deleting a booking.
     """
-    return render(request, 'booking/delete_booking_confirmation.html')
+    return render(request, 'booking/booking_delete_confirmation.html')
