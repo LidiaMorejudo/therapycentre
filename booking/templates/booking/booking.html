@@ -4,6 +4,12 @@
 
 {% block content %}
 
+{% if request.GET.success %}
+<div class="alert alert-success text-center mt-3">
+    Your session has been successfully booked!
+</div>
+{% endif %}
+
 <div class="container">
 
     <!-- Messages block -->
@@ -22,7 +28,6 @@
             <p>Read our <a href="#session-policy">Session Policy</a> before confirming your booking.</p>
 
             <!-- Booking form -->
-           
             <form id="bookingForm" method="post">
                 {% csrf_token %}
                 {{ booking_form.media }}
@@ -44,45 +49,4 @@
     </div>
 </div>
 
-<!-- Booking confirmation Modal -->
-<div class="modal fade" id="bookingconfirmationModal" tabindex="-1" role="dialog"
-    aria-labelledby="confirmationModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content text-center">
-            <div class="modal-header">
-                <h2 class="modal-title text-center" id="confirmationModalLabel">Booking Confirmation</h2>
-            </div>
-            <div class="modal-body text-center">
-                <p>Thank you for booking a session with us.</p>
-                <p>We look forward to supporting you in your therapy journey.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 {% endblock %}
-
-
-{% block scripts %}
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('success')) {
-            const modalElement = document.getElementById('bookingconfirmationModal');
-            if (modalElement) {
-                var confirmationModal = new bootstrap.Modal(modalElement);
-                confirmationModal.show();
-
-                urlParams.delete('success');
-                window.history.replaceState({}, document.title, window.location.pathname + (urlParams
-                .toString() ? '?' + urlParams.toString() : ''));
-            } else {
-                console.error('Modal element not found');
-            }
-        }
-    });
-</script>
-{% endblock scripts %}
