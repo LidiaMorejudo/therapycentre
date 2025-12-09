@@ -21,4 +21,3 @@ def inquiries_view(request):
         'inquiries/inquiries.html',
         {'inquiries_form': inquiries_form},
     )
-
