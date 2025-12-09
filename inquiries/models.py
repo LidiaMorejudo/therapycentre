@@ -9,4 +9,3 @@ class Inquiries(models.Model):
 
     def __str__(self):
         return f"Inquiries from {self.name}"
-
