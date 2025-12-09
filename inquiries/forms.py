@@ -1,5 +1,5 @@
 from django import forms
-from .models import Inquiries
+from .models import Inquiry
 
 
 class InquiriesForm(forms.ModelForm):
@@ -13,5 +13,5 @@ class InquiriesForm(forms.ModelForm):
         message (str) - the inquiry content.
     """
     class Meta:
-        model = Inquiries
+        model = Inquiry
         fields = ('subject', 'name', 'email', 'message')
