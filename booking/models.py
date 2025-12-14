@@ -11,7 +11,7 @@ from django.utils import timezone
 
 class BookingManager(models.Manager):
     """
-    Custom manager for the BookATable model,
+    Custom manager for the BookASession model,
     providing methods for fetching bookings.
     """
     def todays_bookings(self):
@@ -77,7 +77,7 @@ class BookASession(models.Model):
         """
         Validation logic for ensuring the booking is valid.
         Raises ValidationError ff the booking date or time is in the past,
-        or if there are no available tables.
+        or if there are no available spaces.
         """
         # Get current date and time
         now = timezone.now()
@@ -90,9 +90,9 @@ class BookASession(models.Model):
 
         # Prevent booking in the past
         if self.date < current_date:
-            raise ValidationError("You cannot book a table in the past.")
+            raise ValidationError("You cannot book a session in the past.")
         elif self.date == current_date and self.time < current_time:
-            raise ValidationError("You cannot book a table in the past.")
+            raise ValidationError("You cannot book a session in the past.")
 
         # Verify that bookings are fetched correctly
         bookings_at_time = BookASession.objects.bookings_for_time(
