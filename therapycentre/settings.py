@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dl&x$6k+(j4+gpzjh$b9*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['my-therapycentre-app.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['my-therapycentre-app-4c2771741a8a.herokuapp.com', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
