@@ -22,7 +22,8 @@ Built using the Django framework, this platform provides full CRUD functionality
 
 Images were sourced from [AmiResponsive](https://amiresponsive.co.uk/)
 
-## Table of content
+<details>
+<summary>Table of Contents </summary>
 - [UX/UI Design](#uxui-design)
   - [User Stories](#user-stories)
   - [Wireframes](#wireframes)
@@ -59,6 +60,7 @@ Images were sourced from [AmiResponsive](https://amiresponsive.co.uk/)
 - [References/credit](#referencescredit)
   - [Content](#content)
   - [Media](#media)
+</details>
 
 ## UX/UI Design
 
