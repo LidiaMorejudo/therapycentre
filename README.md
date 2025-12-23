@@ -24,6 +24,7 @@ Images were sourced from [AmiResponsive](https://amiresponsive.co.uk/)
 
 <details>
 <summary>Table of Contents </summary>
+
 - [UX/UI Design](#uxui-design)
   - [User Stories](#user-stories)
   - [Wireframes](#wireframes)
