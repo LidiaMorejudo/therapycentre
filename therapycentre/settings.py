@@ -122,3 +122,5 @@ LOGOUT_REDIRECT_URL = '/'     # redirect after logout
 
 # Only for development
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
