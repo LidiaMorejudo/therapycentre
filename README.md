@@ -2,21 +2,19 @@ This will be my Read
 
 # 🌿 Therapy Centre – Holistic Yoga in the Heart of Bristol
 
-Therapy Centre is a serene and beautifully designed wellness resort located in the heart of Bristol, dedicated to holistic yoga therapy. This full-stack web application enables users to seamlessly explore and engage with the centre’s services.
+**Therapy Centre** is a thoughtfully designed wellness website inspired by a peaceful yoga retreat based in the heart of Bristol. The project focuses on holistic yoga therapy and provides users with an intuitive and calming digital experience.
 
-Through the website, users can:
+- This full-stack web application allows users to:
 
-- Book personalized yoga therapy sessions
+- Book group yoga sessions by selecting a preferred date and time
 
-- Browse a detailed price list
+- View a comprehensive list of services and pricing
 
-- Learn more about experienced practitioners
+- Contact the centre directly through the website
 
-- Contact the centre directly
+- Access key information such as location and directions
 
-Access essential information, including location and directions
-
-Built using the Django framework, this platform provides full CRUD functionality, allowing users to create, read, update, and delete their session bookings with ease.
+Developed using the **Django framework**, the application implements full CRUD functionality, enabling users to easily create, view, update, and cancel their session bookings.
 
 **IMAGES OF THE DEPLOYED SITE WILL GO HERE**
 
