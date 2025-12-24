@@ -194,35 +194,7 @@ The inquiries app allows users to submit queries through a contact form, storing
 
 The database schema is designed to maintain clear relationships between users, their bookings, and inquiries, ensuring consistency and easy data access.
 
-+------------------+        +------------------+
-|      User        |        |      Session     |
-+------------------+        +------------------+
-| id (PK)          |        | id (PK)          |
-| username         |        | name             |
-| email            |        | description      |
-| password         |        | schedule / price |
-+------------------+        +------------------+
-        ^                          ^
-        |                          |
-        +----------+---------------+
-                   |
-             +------------------+
-             |     Booking      |
-             +------------------+
-             | id (PK)          |
-             | user_id (FK)     |
-             | session_id (FK)  |
-             | date_booked      |
-             | status           |
-             +------------------+
-
-+------------------+
-|    Inquiry       |
-+------------------+
-| id (PK)          |
-| message          |
-| date_submitted   |
-+------------------+
+![Preview of Website](documentation/images/Database_design.png)
 
 Legend:
 
