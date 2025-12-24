@@ -183,6 +183,7 @@ An important note: some features that I consider essential for a Yoga Therapy Ce
 
 ## Database Design
 
+
 The Therapy Centre web application is structured into three main Django apps:
 
 The core app handles static pages, including the home page, “Find Us” page, and the sessions page, which displays information about the yoga therapy sessions such as schedule, types, and pricing.
