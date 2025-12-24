@@ -183,6 +183,7 @@ An important note: some features that I consider essential for a Yoga Therapy Ce
 ### Existing features
 
 
+
 ## Technologies used
 
 ### Languages
@@ -190,6 +191,25 @@ An important note: some features that I consider essential for a Yoga Therapy Ce
 - CSS3
 - JavaScript
 - Python
+
+### Database
+### Frameworks
+### Libraries and Additional Programs and Tools
+
+## Manual Testing
+
+### Responsiveness
+
+Responsiveness was tested manually using Chrome DevTools across multiple screen sizes and devices.
+
+Third-party iframe-based tools such as Am I Responsive were tested but could not render the deployed Django application due to security headers and middleware enforced by Django in production.
+
+This behaviour is expected and does not impact the responsiveness or usability of the site.
+
+### Browser compability
+### Validator testing
+### User Story testing
+### Bugs
 
 ### Libraries & Additional Programs/Software/Tools
 
