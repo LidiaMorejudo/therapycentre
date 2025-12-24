@@ -8,7 +8,7 @@ This will be my Read
 
 - Book group yoga sessions by selecting a preferred date and time
 
-- View a comprehensive list of services and pricing
+- View a comprehensive list of services
 
 - Contact the centre directly through the website
 
@@ -51,7 +51,7 @@ Images were sourced from **Chrome**
   - [Frameworks](#frameworks)
   - [Libraries & Additional Programs/Software/Tools](#libraries--additional-programssoftwaretools)
 - [Manual Testing](#manual-testing)
-  - [Responsivness](#responsivness)
+  - [Responsiveness](#responsiveness)
   - [Browser compability](#browser-compability)
   - [Validator testing](#validator-testing)
   - [User Story testing](#user-story-testing)
@@ -181,6 +181,61 @@ Won’t Have (this time): Features intentionally left out of this version but co
 
 An important note: some features that I consider essential for a Yoga Therapy Centre’s website and booking system (and therefore labeled as Must Have) were not implemented in this iteration. They didn’t even reach the “In Progress” stage in Excel. This was intentional, as my main focus for this project is on building a smooth and supportive user experience for clients. Administrative and back-office functionality is something I would be very interested in exploring in future versions of the project.
 
+## Database Design
+
+The Therapy Centre web application is structured into three main Django apps:
+
+The core app handles static pages, including the home page, “Find Us” page, and the sessions page, which displays information about the yoga therapy sessions such as schedule, types, and pricing.
+
+The booking app manages user accounts and session bookings. Users can sign up, log in, view their bookings, update or cancel them, and track their booking history.
+
+The inquiries app allows users to submit queries through a contact form, storing their requests for follow-up.
+
+The database schema is designed to maintain clear relationships between users, their bookings, and inquiries, ensuring consistency and easy data access.
+
++------------------+        +------------------+
+|      User        |        |      Session     |
++------------------+        +------------------+
+| id (PK)          |        | id (PK)          |
+| username         |        | name             |
+| email            |        | description      |
+| password         |        | schedule / price |
++------------------+        +------------------+
+        ^                          ^
+        |                          |
+        +----------+---------------+
+                   |
+             +------------------+
+             |     Booking      |
+             +------------------+
+             | id (PK)          |
+             | user_id (FK)     |
+             | session_id (FK)  |
+             | date_booked      |
+             | status           |
+             +------------------+
+
++------------------+
+|    Inquiry       |
++------------------+
+| id (PK)          |
+| message          |
+| date_submitted   |
++------------------+
+
+Legend:
+
+PK = Primary Key
+
+FK = Foreign Key
+
+Arrows indicate relationships:
+
+A user can have many bookings.
+
+Each booking references one session.
+
+Inquiry is independent and can exist without a user account.
 
 ## Features
 
@@ -206,9 +261,7 @@ An important note: some features that I consider essential for a Yoga Therapy Ce
 
 Responsiveness was tested manually using Chrome DevTools across multiple screen sizes and devices.
 
-Third-party iframe-based tools such as Am I Responsive were tested but could not render the deployed Django application due to security headers and middleware enforced by Django in production.
-
-This behaviour is expected and does not impact the responsiveness or usability of the site.
+Third-party iframe-based tools such as Am I Responsive were tested but could not render the deployed Django application due to security headers and middleware enforced by Django in production. This behaviour is expected and does not impact the responsiveness or usability of the site.
 
 ### Browser compability
 ### Validator testing
