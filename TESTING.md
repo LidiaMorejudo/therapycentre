@@ -21,5 +21,8 @@ All primary pages of the website were validated using the W3C Markup Validation 
 ## W3C CSS Validator Results
 
 The CSS for the website was validated using the W3C Jigsaw CSS Validator. 
- 
-The validation results can be viewed [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-therapycentre-app-4c2771741a8a.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+The validation results can be viewed:
+[here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-therapycentre-app-4c2771741a8a.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+The website’s CSS was validated using the W3C Jigsaw CSS Validator. The validation results did not report any critical errors; however, a number of warnings were identified. These warnings are primarily related to vendor-prefixed properties and modern CSS features that are included to ensure cross-browser compatibility and responsive behaviour. The majority of these warnings originate from third-party frameworks, such as Bootstrap, rather than from custom-written CSS. Such warnings are common in contemporary web development and do not negatively impact the functionality, accessibility, or visual presentation of the website. As a result, the CSS is considered standards-compliant and fit for production use.
