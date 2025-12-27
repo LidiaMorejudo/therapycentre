@@ -16,6 +16,8 @@ This will be my Read
 
 Developed using the **Django framework**, the application implements full CRUD functionality, enabling users to easily create, view, update, and cancel their session bookings.
 
+Live site can be seen [here](https://my-therapycentre-app-4c2771741a8a.herokuapp.com/).
+
 ![Preview of Website](documentation/images/Tablet_therapycentre_image.png)
 
 ![Preview of Website](documentation/images/mobile_therapycentre_image.png)
