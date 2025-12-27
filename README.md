@@ -253,15 +253,37 @@ Potential future enhancements for the website include the integration of online 
 
 ## Technologies used
 
-### Languages
-- HTML5
-- CSS3
-- JavaScript
-- Python
+### Technologies Used
 
-### Database
-### Frameworks
-### Libraries and Additional Programs and Tools
+| Category | Technology | Purpose / Description |
+|----------|-----------|---------------------|
+| **Frontend** | HTML5 | Defines the structure and layout of web pages. |
+|  | CSS3 | Provides styling, layout, and visual enhancements. |
+|  | Bootstrap 5 | Responsive framework for layout, grids, and UI components. |
+|  | django-crispy-forms & crispy-bootstrap5 | Styles Django forms consistently with Bootstrap 5. |
+|  | django-summernote | Embedded rich text editor for content creation in admin dashboard. |
+|  | Cloudinary | Cloud-based media hosting and optimization. |
+| **Backend** | Python | Core programming language for server-side logic. |
+|  | Django 4.2.7 | Handles routing, authentication, templating, and database interactions. |
+|  | Django-Allauth | Provides authentication, registration, and social account management. |
+|  | dj-database-url | Simplifies database configuration via URL. |
+|  | dj3-cloudinary-storage | Connects Django storage backend with Cloudinary. |
+|  | Gunicorn | WSGI HTTP server for production deployment. |
+|  | Whitenoise | Efficiently serves static files in production. |
+|  | PostgreSQL (psycopg2-binary) | Relational database for storing users, bookings, and site data. |
+|  | SQLParse | Library for parsing SQL queries in Django. |
+|  | OAuthlib, Requests-OAuthlib, python3-openid, PyJWT | Support secure authentication and authorization workflows. |
+|  | asgiref | Provides asynchronous support for Django applications. |
+| **Tools & Deployment** | pip | Python package installer for managing dependencies. |
+|  | Git | Version control system for tracking code changes. |
+|  | Heroku | Cloud platform for deployment and hosting. |
+| **Potential Future Tools/Technologies** | Stripe / PayPal APIs | Enable secure online payment processing through the website. |
+|  | Django Email Backend / SendGrid / SMTP | Automate booking confirmations, reminders, and follow-up emails. |
+|  | Django Rest Framework (DRF) | Potential for a client portal or API for appointments. |
+|  | Chart.js / Plotly | Visualize client activity or booking statistics in the admin dashboard. |
+|  | Feedback & Review Plugins | Collect client testimonials and ratings for service improvement. |
+|  | Blog/Content Management Tools | Publish wellness tips, yoga exercises, and educational content. |
+
 
 ## Manual Testing
 
