@@ -40,7 +40,7 @@ Images were sourced from **Chrome**
   - [Existing features](#existing-features)
   - [Landing page](#landing-page)
   - [Navigation menu](#navigation-menu)
-  - [Admin dashboard] (#Admin-Dashboard)
+  - [Admin dashboard](#admin-dashboard)
   - [Potential future features](#potential-future-features)
 - [Technologies used](#technologies-used)
   - [Languages](#languages)
