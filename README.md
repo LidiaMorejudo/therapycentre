@@ -289,6 +289,7 @@ Third-party iframe-based tools such as Am I Responsive were tested but could not
 
 ### Testing Documentation
 
+Comprehensive testing documentation can be found in the [testing document](TESTING.md).
 
 ### Bugs, Issues and Solutions
 
