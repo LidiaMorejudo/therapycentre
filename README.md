@@ -43,12 +43,10 @@ Images were sourced from **Chrome**
   - [Admin dashboard](#admin-dashboard)
   - [Potential future features](#potential-future-features)
 - [Technologies used](#technologies-used)
-- [Manual Testing](#manual-testing)
+- [Testing](#testing)
   - [Responsiveness](#responsiveness)
-  - [Browser compability](#browser-compability)
-  - [Validator testing](#validator-testing)
-  - [User Story testing](#user-story-testing)
-  - [Bugs](#bugs)
+  - [Testing Documentation](#testing-documentation)
+  - [Bugs, Issues and Solutions](#bugs-issues-and-solutions)
 - [Deployment](#deployment)
   - [Forking](#forking)
   - [Cloning](#cloning)
@@ -281,7 +279,7 @@ Potential future enhancements for the website include the integration of online 
 |  | Blog/Content Management Tools | Publish wellness tips, yoga exercises, and educational content. |
 
 
-## Manual Testing
+## Testing
 
 ### Responsiveness
 
@@ -289,10 +287,11 @@ Responsiveness was tested manually using Chrome DevTools across multiple screen 
 
 Third-party iframe-based tools such as Am I Responsive were tested but could not render the deployed Django application due to security headers and middleware enforced by Django in production. This behaviour is expected and does not impact the responsiveness or usability of the site.
 
-### Browser compability
-### Validator testing
-### User Story testing
-### Bugs
+### Testing Documentation
+
+
+### Bugs, Issues and Solutions
+
 
 ### Libraries & Additional Programs/Software/Tools
 
