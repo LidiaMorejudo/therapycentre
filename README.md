@@ -38,14 +38,9 @@ Images were sourced from **Chrome**
     - [Database design](#database-design)
 - [Features](#features)
   - [Existing features](#existing-features)
-  - [Header](#header)
-  - [Navigation menu](#navigation-menu)
   - [Landing page](#landing-page)
-  - [Location page](#location-page)
-  - [Contact page](#contact-page)
-  - [Book a table page](#book-a-table-page)
-  - [Register account/login page](#register-accountlogin-page)
-  - [Footer](#footer)
+  - [Navigation menu](#navigation-menu)
+  - [Admin dashboard] (#Admin-Dashboard)
   - [Potential future features](#potential-future-features)
 - [Technologies used](#technologies-used)
   - [Languages](#languages)
@@ -216,6 +211,12 @@ Inquiry is independent and can exist without a user account.
 
 ### Existing features
 
+The website is organised into multiple interconnected pages, all of which incorporate consistent design elements to promote a cohesive and seamless user experience. Key components, including a navigation bar featuring the site logo and clearly structured navigational links, as well as a footer containing essential contact information, are implemented uniformly across the site. The homepage serves as an introductory interface, providing users with an overview of the therapy services offered.
+
+Authentication-related links, including sign up, log in, and log out, are accessible across all pages, ensuring that users can conveniently manage and access their accounts regardless of their location within the website.
+
+### Landing-page
+
 The landing page is designed to clearly and efficiently communicate the purpose and core services of the therapy centre. It features a prominent header image displaying the centre’s name, accompanied by a concise tagline intended to provide visitors with an immediate understanding of the nature of the services offered. Two clearly defined call-to-action buttons are presented, enabling users to either book an appointment or access detailed information about the available yoga services, which represent the primary functional objectives of the website.
 
 ![Preview of Website](documentation/images/header_therapycentre_image.png)
@@ -226,7 +227,7 @@ Positioned beneath the header section is a brief informational area that provide
 
 The mobile version of the website retains the same core functionality while employing a responsive design to ensure accessibility and usability across a range of screen sizes and devices. Although further optimisation—such as adjusting font sizes for smaller screens—could enhance readability, these refinements were considered outside the scope of the current development priorities.
 
-###Navigation Menu
+### Navigation Menu
 
 The navigation menu provides structured access to the website’s primary content and functional pages. It includes links to key sections such as Contact, Location, and Therapy Services, as well as a prominently styled call-to-action button directing users to the appointment booking page. These elements are designed to support intuitive navigation and efficient user interaction.
 
@@ -239,6 +240,16 @@ Once authenticated, users are presented with alternative navigation options, spe
 Through the use of Bootstrap components and custom CSS styling, the navigation menu adapts responsively to smaller screen sizes by transforming into a dropdown menu. To preserve clarity and minimise visual clutter on mobile devices, social media icons are hidden from the navigation menu on smaller screens and are instead displayed exclusively within the website footer.
 
 ![Preview of Website](documentation/images/navigationmenumobile_therapycentre_image.jpeg)
+
+### Admin Dashboard
+
+The administrative interface is provided through Django’s built-in dashboard. A superuser account was created to facilitate administrative access, enabling the management of other users, who can be assigned either superuser privileges or limited permissions such as viewing new bookings and messages.
+
+Superusers have full control over site interactions, including the ability to review messages submitted through the Inquiries section, manage bookings, and perform actions such as modifying or deleting entries as required. 
+
+### Potential future features
+
+Potential future enhancements for the website include the integration of online payment functionality, which would allow clients to securely complete transactions directly through the platform, thereby streamlining the booking and payment process. Another prospective feature is the implementation of automated email notifications to confirm bookings, send reminders, or provide follow-up information, improving communication and client engagement. Additional enhancements could include incorporating a blog or resources section with wellness tips, yoga guidance, and therapeutic exercises, which could enhance user engagement and establish the centre as a trusted source of health and wellness information. Finally, integrating a feedback or review system would enable clients to provide testimonials, supporting continuous service improvement and fostering trust among prospective clients.
 
 ## Technologies used
 
