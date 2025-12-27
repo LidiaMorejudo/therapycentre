@@ -216,7 +216,29 @@ Inquiry is independent and can exist without a user account.
 
 ### Existing features
 
+The landing page is designed to clearly and efficiently communicate the purpose and core services of the therapy centre. It features a prominent header image displaying the centre’s name, accompanied by a concise tagline intended to provide visitors with an immediate understanding of the nature of the services offered. Two clearly defined call-to-action buttons are presented, enabling users to either book an appointment or access detailed information about the available yoga services, which represent the primary functional objectives of the website.
 
+![Preview of Website](documentation/images/header_therapycentre_image.png)
+
+Positioned beneath the header section is a brief informational area that provides further contextual insight into the therapy centre’s values and therapeutic approach. Additionally, the inclusion of the centre’s opening hours addresses a common user requirement, as such information is frequently sought by visitors to healthcare and wellness-related websites.
+
+![Preview of Website](documentation/images/middle_therapycentre_image.png)
+
+The mobile version of the website retains the same core functionality while employing a responsive design to ensure accessibility and usability across a range of screen sizes and devices. Although further optimisation—such as adjusting font sizes for smaller screens—could enhance readability, these refinements were considered outside the scope of the current development priorities.
+
+###Navigation Menu
+
+The navigation menu provides structured access to the website’s primary content and functional pages. It includes links to key sections such as Contact, Location, and Therapy Services, as well as a prominently styled call-to-action button directing users to the appointment booking page. These elements are designed to support intuitive navigation and efficient user interaction.
+
+In addition, the navigation menu incorporates links to the therapy centre’s social media platforms. At the current stage of development, these links direct users to the respective social media landing pages. Positioned at the far right of the navigation bar are authentication-related links, allowing users to register or sign in. User authentication enables access to personalised functionality, including the ability to view, edit, or cancel appointments, thereby supporting full CRUD (Create, Read, Update, Delete) operations.
+
+Once authenticated, users are presented with alternative navigation options, specifically “My Appointments” and “Logout”, replacing the registration and sign-in links. This dynamic behaviour enhances usability by displaying contextually relevant options based on the user’s authentication status.
+
+![Preview of Website](documentation/images/navigationmenu_therapycentre_image.png)
+
+Through the use of Bootstrap components and custom CSS styling, the navigation menu adapts responsively to smaller screen sizes by transforming into a dropdown menu. To preserve clarity and minimise visual clutter on mobile devices, social media icons are hidden from the navigation menu on smaller screens and are instead displayed exclusively within the website footer.
+
+![Preview of Website](documentation/images/navigationmenumobile_therapycentre_image.jpeg)
 
 ## Technologies used
 
