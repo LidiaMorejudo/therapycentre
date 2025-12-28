@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from .forms import InquiriesForm  # your form
 
+
 def inquiries_view(request):
     """
     Handles the inquiries form for users to send messages.
@@ -14,7 +15,7 @@ def inquiries_view(request):
         inquiries_form = InquiriesForm(data=request.POST)
         if inquiries_form.is_valid():
             inquiries_form.save()
-            return redirect(f"{reverse('inquiries')}?success=true")  # use URL name
+            return redirect(f"{reverse('inquiries')}?success=true")
 
     return render(
         request,
