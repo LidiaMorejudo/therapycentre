@@ -3,10 +3,12 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from .models import BookASession
 
+
 class BookASessionForm(forms.ModelForm):
     """
     Form for creating and validating session bookings.
-    This form is based on the `BookASession` model and provides custom validation
+    This form is based on the `BookASession`
+    model and provides custom validation
     for the booking date, time, and availability of sessions.
     Contains fields for:
         firstname (str) - first name of the person making the booking.
@@ -20,7 +22,11 @@ class BookASessionForm(forms.ModelForm):
     policy_check = forms.BooleanField(
         required=True,
         label="I have read and agree to the Booking Policy",
-        error_messages={'required': 'You must agree to the booking policy to proceed.'}
+        error_messages={
+            'required': (
+                'You must agree to the booking policy to proceed.'
+            )
+            }
     )
 
     class Meta:
@@ -45,7 +51,7 @@ class BookASessionForm(forms.ModelForm):
         Validates the booking date.
         Ensures that the booking date is not in the past and not more than
         30 days in the future.
-        Raises ValidationError if the date is in the past or more 
+        Raises ValidationError if the date is in the past or more
         than 30 days ahead.
         """
         date = self.cleaned_data['date']
@@ -62,7 +68,7 @@ class BookASessionForm(forms.ModelForm):
         Validates the booking time.
         Ensures that the time selected is not in the past if the booking
         is for the current day.
-        Raises ValidationError if the time is earlier 
+        Raises ValidationError if the time is earlier
         than current time for todays bookings.
         """
         date = self.cleaned_data.get('date')
@@ -77,7 +83,8 @@ class BookASessionForm(forms.ModelForm):
     def clean(self):
         """
         Performs full form validation, including checking seat availability.
-        Combines the date, time, and number of students to check if there are available
+        Combines the date, time, and number of
+        students to check if there are available
         seats for chosen time slot.
         Raises ValidationError if there are no available seats.
         """
@@ -91,7 +98,7 @@ class BookASessionForm(forms.ModelForm):
             total_seats = sum(booking.students for booking in bookings_at_time)
             if total_seats + students > 30:
                 raise ValidationError(
-                    "No available spaces in this session.")
+                    ("No available spaces in this session.")
+                )
 
         return cleaned_data
-    

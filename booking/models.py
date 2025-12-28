@@ -104,14 +104,12 @@ class BookASession(models.Model):
         if total_spaces + self.students > 30:
             raise ValidationError("No available spaces for this time slot.")
 
-
     def save(self, *args, **kwargs):
         """
         Override save method to include custom validation.
         """
         self.clean()  # Perform the validation check
         super().save(*args, **kwargs)
-
 
     class Meta:
         """
@@ -126,4 +124,4 @@ class BookASession(models.Model):
             models.UniqueConstraint(
                 fields=['date', 'time', 'user'],
                 name='unique_booking_per_user_per_time')
-    ]
+        ]
