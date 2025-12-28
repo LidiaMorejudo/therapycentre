@@ -5,6 +5,7 @@ from .models import BookASession
 
 logger = logging.getLogger(__name__)
 
+
 @receiver(user_signed_up)
 def handle_user_signed_up(sender, request, user, **kwargs):
     email = user.email
