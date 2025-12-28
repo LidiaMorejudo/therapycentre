@@ -34,3 +34,9 @@ The JavaScript for the site was validated using JSHint.
 ![Preview of Website](documentation/images/jshinttest_therapycentre_image.png)
 
 The website’s JavaScript code was validated using JSHint. ES6 features, such as const, are supported, and the bootstrap global is properly acknowledged. The validation confirms that the code is free of syntax errors and follows best practices, ensuring reliable interactive functionality across supported browsers.
+
+## PEP8 Validation
+
+I used the Code Institute Linter [Code Institute Linter](https://pep8ci.herokuapp.com/)
+
+As this linter is for Python code only I tested the files with .py extension by copying the code and pasting it in the linter.
