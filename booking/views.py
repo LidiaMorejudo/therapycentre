@@ -8,7 +8,8 @@ from .models import BookASession
 def book_session(request):
     """
     Handles creation of a new session booking.
-    If POST: save booking, assign user if logged in, redirect with success query for modal.
+    If POST: save booking, assign user if logged in,
+    redirect with success query for modal.
     If GET: show empty booking form.
     """
     if request.method == "POST":
@@ -25,12 +26,19 @@ def book_session(request):
         else:
             messages.error(
                 request,
-                "There was an error with your booking. Please check the form and try again."
+                (
+                    "There was an error with your booking."
+                    "Please check the form and try again."
+                )
             )
     else:
         booking_form = BookASessionForm()
 
-    return render(request, 'booking/booking.html', {'booking_form': booking_form})
+    return render(
+        request,
+        'booking/booking.html',
+        {'booking_form': booking_form}
+    )
 
 
 @login_required
@@ -38,7 +46,12 @@ def booking_list(request):
     """
     Show bookings for the logged-in user.
     """
-    bookings = BookASession.objects.filter(user=request.user).order_by('-date', '-time')
+    bookings = BookASession.objects.filter(
+        user=request.user
+    ).order_by(
+        '-date',
+        '-time'
+    )
     return render(request, 'booking/booking_list.html', {'bookings': bookings})
 
 
@@ -55,11 +68,18 @@ def edit_booking(request, booking_id):
             form.save()
             return redirect('edit_booking_confirmation')
         else:
-            messages.error(request, "There was an error updating your booking.")
+            messages.error(
+                request,
+                "There was an error updating your booking."
+            )
     else:
         form = BookASessionForm(instance=booking)
 
-    return render(request, 'booking/booking_edit.html', {'form': form, 'booking': booking})
+    return render(
+        request,
+        'booking/booking_edit.html',
+        {'form': form, 'booking': booking}
+    )
 
 
 @login_required
