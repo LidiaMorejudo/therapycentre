@@ -6,4 +6,3 @@ urlpatterns = [
     path('findus/', views.findus, name='findus'),
     path('sessions/', views.sessions, name='sessions'),
 ]
-
