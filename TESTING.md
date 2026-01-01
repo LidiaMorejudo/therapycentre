@@ -44,3 +44,21 @@ As this linter is for Python code only I tested the files with .py extension by 
 ![PEP8 Validation](documentation/images/pep8linter_therapycentre_image.png)
 
 The Python code for this Django project was validated using a PEP 8–compliant linter to ensure adherence to Python’s official style guidelines. The validation process did not identify any functional or logical errors within the codebase. All reported issues were limited to formatting concerns, specifically line length exceeding the recommended maximum and minor spacing inconsistencies. These issues were resolved by restructuring long lines and adjusting indentation and spacing as required. Following these corrections, the codebase conforms fully to PEP 8 standards, improving readability, maintainability, and overall code quality.
+
+## Lighthouse Testing
+
+Lighthouse audits were conducted using Google Chrome DevTools to assess
+performance, accessibility, best practices, and SEO. The website achieved
+strong results across all categories.
+
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_home_computer.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_booking_computer.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_findus_computer.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_inquiries_computer.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_sessions_computer.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_home_mobile.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_booking_mobile.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_findus_mobile.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_inquiries_mobile.pdf)
+- [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_sessions_mobile.pdf)
+
