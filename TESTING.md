@@ -62,3 +62,6 @@ strong results across all categories.
 - [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_inquiries_mobile.pdf)
 - [View Lighthouse Reports (PDF)](documentation/lighthouse/lighthouse_sessions_mobile.pdf)
 
+## Accessibility Testing (WAVE)
+
+The website was tested using the [Wave](https://wave.webaim.org/) Accessibility Tool, which evaluates compliance with WCAG guidelines, focusing on link functionality, text readability, and visual clarity. During testing, all issues were addressed, including “empty link” warnings for the social media icons in the header and footer by adding descriptive aria-label attributes. One button was flagged for low contrast; however, the button changes color on hover, ensuring sufficient visibility when interacted with. Overall, the WAVE report confirms that the site meets accessibility standards and provides a clear, navigable, and user-friendly experience. The full WAVE report can be viewed here.
