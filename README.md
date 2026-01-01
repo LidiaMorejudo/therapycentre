@@ -307,6 +307,89 @@ Ultimately, I resolved the issue by deleting my local copy of the project, creat
 
 The exact cause of the original communication failure remains unclear, and even the tutors were unable to determine why the previous setup stopped functioning. Nonetheless, this experience highlights the importance of maintaining consistent development environments and version control when working on Python projects integrated with GitHub.
 
+## Forking the Repository
+
+Forking a repository creates a personal copy of another user's project under your own GitHub account. This allows you to freely make changes to the codebase without affecting the original project, and is commonly used when contributing to open-source projects.
+
+To fork this repository:
+
+1. Navigate to the [repository](https://github.com/LidiaMorejudo/therapycentre) on GitHub.
+2. Click the **Fork** button in the top-right corner of the page.
+3. If prompted, select your GitHub account or organization under the **Owner** dropdown menu.
+4. (Optional) Modify the **Repository Name** if you wish to rename your forked repository.
+5. (Optional) Add a brief **Description** to clarify the purpose of your fork.
+6. Choose **"Copy the DEFAULT branch only"** — this is sufficient for most use cases. Leaving this unchecked will copy all branches.
+7. Click **Create Fork** to complete the process.
+
+Your forked repository will now appear under your GitHub account and can be cloned or modified independently.
+
+## Creating a Virtual Environment
+
+A virtual environment is an isolated workspace that allows you to manage project-specific dependencies without affecting your global Python installation. It is recommended to use a virtual environment when developing Python applications to ensure consistency and avoid conflicts between packages.
+
+To create and activate a virtual environment for this project, follow these steps:
+
+1. Open your command-line interface (e.g., Git Bash, Terminal, or Command Prompt) in the root directory of the project.
+
+2. Create the virtual environment by running:
+   ```bash
+   python -m v
+
+
+## Creating and Migrating the Database
+
+To set up the database for this project, follow the steps below. These steps assume that you have PostgreSQL and Python installed, and that you are working within your virtual environment.
+
+### 1. Create the PostgreSQL Database
+
+1. Open your command-line interface and log into PostgreSQL:
+   ```bash
+   psql
+
+### Deployment to Heroku
+
+This project was deployed to **Heroku** using the command-line interface (CLI) rather than the GitHub-to-Heroku direct deployment option. Deploying via the terminal provides greater control over the deployment process, allowing for configuration of environment variables, management of dependencies, and execution of Django-specific commands such as database migrations. Using the CLI also allows the developer to interact directly with the Heroku application for logging, scaling, and troubleshooting.
+
+**Steps to deploy a Django project via CLI:**
+
+1. **Install Heroku CLI** – [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)  
+2. **Login:**  
+   ```bash
+   heroku login
+
+
+Create a Heroku app:
+
+heroku create your-app-name
+
+Set environment variables:
+
+heroku config:set SECRET_KEY='your_secret_key' DEBUG=False
+
+Prepare project: Ensure requirements.txt, Procfile, and runtime.txt are configured. Example Procfile:
+
+web: gunicorn project_name.wsgi
+
+Push code to Heroku:
+
+git add .
+git commit -m "Deploy to Heroku"
+git push heroku main
+
+
+Run migrations:
+
+heroku run python manage.py migrate
+
+Open app:
+
+heroku open
+
+This process deploys the Django application successfully and allows full management via the terminal.
+
+## Important points to keep in mind if deploying directly from the CLI and not through Github
+
+It is important to note that when deploying via the Heroku CLI rather than directly from GitHub, any changes made in your local project need to be **committed separately to both GitHub and Heroku**. Updates pushed only to GitHub will **not automatically appear on the Heroku app**, since the deployment was not linked directly to the repository.
 
 ### Libraries & Additional Programs/Software/Tools
 
