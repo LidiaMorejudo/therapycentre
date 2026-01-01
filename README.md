@@ -358,34 +358,20 @@ This project was deployed to **Heroku** using the command-line interface (CLI) r
    heroku login
 
 
-Create a Heroku app:
+**Create a Heroku app:**
 
-heroku create your-app-name
-
-Set environment variables:
-
-heroku config:set SECRET_KEY='your_secret_key' DEBUG=False
-
-Prepare project: Ensure requirements.txt, Procfile, and runtime.txt are configured. Example Procfile:
-
-web: gunicorn project_name.wsgi
-
-Push code to Heroku:
-
-git add .
-git commit -m "Deploy to Heroku"
-git push heroku main
-
-
-Run migrations:
-
-heroku run python manage.py migrate
-
-Open app:
-
-heroku open
-
-This process deploys the Django application successfully and allows full management via the terminal.
+1. heroku create your-app-name
+2. Set environment variables:
+3. heroku config:set SECRET_KEY='your_secret_key' DEBUG=False
+4. Prepare project: Ensure requirements.txt, Procfile, and runtime.txt are configured. Example 
+5. Procfile: web: gunicorn project_name.wsgi
+6. Push code to Heroku:
+7. git add .
+8. git commit -m "Deploy to Heroku"
+9. git push heroku main
+10. Run migrations: heroku run python manage.py migrate
+11. Open app: heroku open
+12. This process deploys the Django application successfully and allows full management via the terminal.
 
 ## Important points to keep in mind if deploying directly from the CLI and not through Github
 
