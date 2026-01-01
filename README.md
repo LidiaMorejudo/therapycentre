@@ -295,7 +295,7 @@ Comprehensive testing documentation can be found in the [testing document](TESTI
 
 - **ARIA validation issue**
 
-During validation of the sessions page using the W3C Markup Validator, accessibility errors were identified related to the use of the aria-labelledby attribute on the modal <div> elements. The issue occurred because aria-labelledby requires the element to have a meaningful ARIA role, such as dialog, to properly associate a label for assistive technologies. To resolve this, the outer <div> of each modal was assigned role="dialog", and the aria-labelledby attribute was updated to reference the corresponding <h1> title within the same modal. This ensures that screen readers correctly announce the modal titles when opened, maintaining both compliance with W3C accessibility standards and an inclusive user experience.
+During validation of the sessions page using the W3C Markup Validator, accessibility errors were identified related to the use of the aria-labelledby attribute on the modal &lt;div&gt; elements. The issue occurred because aria-labelledby requires the element to have a meaningful ARIA role, such as dialog, to properly associate a label for assistive technologies. To resolve this, the outer &lt;div&gt; of each modal was assigned role="dialog", and the aria-labelledby attribute was updated to reference the corresponding &lt;h1&gt; title within the same modal. This ensures that screen readers correctly announce the modal titles when opened, maintaining both compliance with W3C accessibility standards and an inclusive user experience.
 
 ### Libraries & Additional Programs/Software/Tools
 
