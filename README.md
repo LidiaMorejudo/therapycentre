@@ -297,6 +297,17 @@ Comprehensive testing documentation can be found in the [testing document](TESTI
 
 During validation of the sessions page using the W3C Markup Validator, accessibility errors were identified related to the use of the aria-labelledby attribute on the modal &lt;div&gt; elements. The issue occurred because aria-labelledby requires the element to have a meaningful ARIA role, such as dialog, to properly associate a label for assistive technologies. To resolve this, the outer &lt;div&gt; of each modal was assigned role="dialog", and the aria-labelledby attribute was updated to reference the corresponding &lt;h1&gt; title within the same modal. This ensures that screen readers correctly announce the modal titles when opened, maintaining both compliance with W3C accessibility standards and an inclusive user experience.
 
+- **Development Challenges and Version Control Issue**
+
+During the development of this project, I encountered an unexpected issue where Python was no longer able to communicate with my GitHub repository. Standard Git commands such as git add and git commit ceased functioning, and the terminal returned an error indicating a connection problem. Despite attempts to resolve the issue with guidance from ChatGPT, the problem persisted.
+
+I then reached out to the tutors at Code Institute for support. They suggested several troubleshooting steps, including purging and reinstalling Python, which were consistent with the solutions I had already attempted. These steps did not resolve the issue. The tutors also provided a recommended set of program versions for this type of project, noting that some of the connectivity problems could be related to version inconsistencies or could potentially arise in future development work.
+
+Ultimately, I resolved the issue by deleting my local copy of the project, creating a new local folder, and cloning the repository afresh from GitHub. I also updated the requirements.txt file to match the versions recommended by the tutors. After this process, I was able to successfully commit changes to the repository.
+
+The exact cause of the original communication failure remains unclear, and even the tutors were unable to determine why the previous setup stopped functioning. Nonetheless, this experience highlights the importance of maintaining consistent development environments and version control when working on Python projects integrated with GitHub.
+
+
 ### Libraries & Additional Programs/Software/Tools
 
 - [Deep Dream Generator](https://deepdreamgenerator.com/) - I utilized Deep Dream Generator, an AI-powered tool, to create images for my project.
