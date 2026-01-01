@@ -40,3 +40,5 @@ The website’s JavaScript code was validated using JSHint. ES6 features, such a
 I used the Code Institute Linter [Code Institute Linter](https://pep8ci.herokuapp.com/)
 
 As this linter is for Python code only I tested the files with .py extension by copying the code and pasting it in the linter.
+
+The Python code for this Django project was validated using a PEP 8–compliant linter to ensure adherence to Python’s official style guidelines. The validation process did not identify any functional or logical errors within the codebase. All reported issues were limited to formatting concerns, specifically line length exceeding the recommended maximum and minor spacing inconsistencies. These issues were resolved by restructuring long lines and adjusting indentation and spacing as required. Following these corrections, the codebase conforms fully to PEP 8 standards, improving readability, maintainability, and overall code quality.
