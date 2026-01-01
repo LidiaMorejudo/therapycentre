@@ -67,3 +67,50 @@ strong results across all categories.
 The website was tested using the [Wave](https://wave.webaim.org/) Accessibility Tool, which evaluates compliance with WCAG guidelines, focusing on link functionality, text readability, and visual clarity. During testing, all issues were addressed, including “empty link” warnings for the social media icons in the header and footer by adding descriptive aria-label attributes. One button was flagged for low contrast; however, the button changes color on hover, ensuring sufficient visibility when interacted with. Overall, the WAVE report confirms that the site meets accessibility standards and provides a clear, navigable, and user-friendly experience. The full WAVE report can be viewed here.
 
 ![WAVE Testing](documentation/images/WAVECHECK_therapycentre_image.png)
+
+# Responsiveness
+
+## Manual testing
+
+| Test                       | Goal                                                                                               | Result |
+| -------------------------- | -------------------------------------------------------------------------------------------------- | ------ |
+| Responsiveness             | Website to be responsive across all screen sizes                                                   | Pass   |
+| Messages                   | Messages give feedback to user when actions like Logging in are undertaken                   | Pass   |
+| Nav Links                  | All navigational links direct user to appropriate pages without any errors                         | Pass   |
+| Account Creation           | Users can create Accounts without errors                                                   | Pass   |
+| Signin                     | Users can sign in without errors                                                             | Pass   |
+| Sign out                   | Users can sign out their accounts without errors                                                           | Pass   |
+| Create booking             | Sign in users can create booking without errors                                    | Pass   |
+| Edit booking               | A signed in user can edit their booking             | Pass   |
+| Delete booking             | A signed in user can delete a booking      | Pass   |
+| Submit Enquiries           | Any user can submit a enquiry              | Pass   |
+| Superadmins                | Superadmins can access the Django dashboard      | Pass   |
+| Superadmins                | Superadmins can access bookings and enquiries submitted on the Django dashboard      | Pass   |
+
+
+# User Story testing
+
+## First-Time Visitor Goals
+
+The website is designed to ensure a smooth and intuitive experience for first-time visitors. The following goals are prioritized:
+
+**Clearly Communicate the Website’s Purpose**
+With attractive images and colours the website welcomes visitors and conveys the ethos as a yoga centre. The information provided is simple but sufficient to give prospective and existing students what they need to access the centre without being overwhelming.
+
+**Enable Easy Navigation and Site Usage**
+A fixed navigation menu is pinned to the top of the browser window, ensuring it remains accessible and visible at all times.
+
+**Provide a Simple Booking Path**
+A link to the booking page is prominently included in the navigation menu, allowing users to book wiht ease. 
+
+## Registered/Returning Visitor Goals
+
+clear links to sign in and account creation are feature at the top of each page.
+
+**Contact the Site Administrator**
+A dedicated enquiries page enables users to send messages directly to the site administrators.
+
+## Site Admin Goals
+
+As a site administrator I can easily access new and existing bookings, as well as enquiries through the Django dashboard. A site super-administrator can also create accounts for other members of staff as simple administrators or super-administrators.
+
