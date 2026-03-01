@@ -23,5 +23,5 @@ urlpatterns = [
     path('inquiries/', include('inquiries.urls')), # inquiries is mounted at /inquiries/
     path('', include('core.urls')),             # homepage, sessions, etc.
     path('accounts/', include('allauth.urls')),
+    path("donations/", include(("donations.urls", "donations"), namespace="donations")),
 ]
-
