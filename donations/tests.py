@@ -35,3 +35,4 @@ class DonationsViewsTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("id", response.json())
         self.assertEqual(response.json()["id"], "cs_test_123")
+        
