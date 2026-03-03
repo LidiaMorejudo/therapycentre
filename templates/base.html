@@ -97,6 +97,13 @@
                                     Book a Session
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == donate_url %}active{% endif %}" 
+                                    href="{{ donate_url }}" 
+                                    {% if request.path == donate_url %}aria-current="page"{% endif %}>
+                                    Donate
+                                </a>
+                            </li>
                         </ul>
 
                                                 <!-- Social media icons -->
