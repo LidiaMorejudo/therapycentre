@@ -7,7 +7,9 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def donate(request):
-    return render(request, "donations/donate.html")
+    return render(request, "donations/donate.html", {
+        "stripe_publishable_key": settings.STRIPE_PUBLISHABLE_KEY
+    })
 
 
 def success(request):
