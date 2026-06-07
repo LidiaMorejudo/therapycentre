@@ -59,6 +59,8 @@ nav {
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Dark overlay across the hero image for better text contrast */
