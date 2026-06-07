@@ -3,13 +3,65 @@
 
 {% block content %}
 
-<!-- Session header with background image -->
-<div class="session-header text-center">
-    <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-        data-bs-target="#YogaSessionsModal">Yoga Sessions</button>
-    <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
-        data-bs-target="#YogaTherapySessionsModal">Yoga Therapy Sessions</button>    
-</div>
+<!-- Sessions page header -->
+<section class="session-header">
+    <div class="session-overlay">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center session-intro">
+                    <h1>Our Sessions</h1>
+                    <p>
+                        Explore our yoga and yoga therapy sessions to find the option that best supports your wellbeing,
+                        movement, relaxation, and personal goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sessions information section -->
+<section class="container sessions-info my-5">
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-md-6">
+            <div class="session-card h-100">
+                <h2>Yoga Sessions</h2>
+                <p>
+                    Our yoga sessions are suitable for adults, seniors, and teens who want to improve flexibility,
+                    strength, posture, breathing, and general wellbeing in a supportive group environment.
+                </p>
+                <p>
+                    These sessions are a good choice if you are looking for regular movement, relaxation,
+                    and gentle guidance through structured yoga classes.
+                </p>
+                <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
+                    data-bs-target="#YogaSessionsModal">
+                    View Yoga Sessions
+                </button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="session-card h-100">
+                <h2>Yoga Therapy Sessions</h2>
+                <p>
+                    Yoga therapy sessions offer a more personalised approach, using yoga-based techniques to support
+                    physical, mental, and emotional wellbeing.
+                </p>
+                <p>
+                    These sessions may be more suitable if you are looking for focused support with stress,
+                    recovery, mobility, or your individual wellbeing needs.
+                </p>
+                <button class="btn btn-secondary btn-lg menu-btn" type="button" data-bs-toggle="modal"
+                    data-bs-target="#YogaTherapySessionsModal">
+                    View Yoga Therapy Sessions
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- Buttons modals inside container -->
 <div class="container">
