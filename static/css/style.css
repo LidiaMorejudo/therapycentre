@@ -211,6 +211,51 @@ nav {
     line-height: 1.7;
 }
 
+/* Donate page */
+
+.donate-page {
+    max-width: 1100px;
+}
+
+.donate-page h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.donate-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.donate-card {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.donate-card h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.donate-info-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.donate-info-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.donate-info-card p {
+    line-height: 1.7;
+}
+
 /* Yoga Sessions page */
 
 .session-header {
@@ -394,6 +439,11 @@ nav {
     }
 
     .booking-policy {
+        padding: 25px 20px;
+    }
+
+    .donate-card,
+    .donate-info-card {
         padding: 25px 20px;
     }
 }
