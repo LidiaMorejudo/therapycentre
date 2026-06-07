@@ -15,15 +15,8 @@ main {
 }
 
 .container {
-    padding-left: 10px;
-    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.col-12, .col-md-6 {
-    padding-left: 0; 
-    padding-right: 0; 
 }
 
 a {
@@ -59,20 +52,101 @@ nav {
 
 /*Header/main page*/
 .header {
-    height: 60vh;
+    min-height: 60vh;
     background: url('/static/images/header_background_main_page.png') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: auto;
+}
+
+/* Dark overlay across the hero image for better text contrast */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Keeps hero content above the overlay */
+.header .row {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
 }
 
 .callout {
-    background-color: rgba(217, 232, 204, 0.4);
-    padding: 20px 40px;
-    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 30px 40px;
+    max-width: 760px;
+    border-radius: 8px;
+    color: #1f1f1f;
+}
+
+.jumbotron-header {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.header-btn,
+.book-btn {
+    background-color: #4f6367;
+    border-color: #4f6367;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.header-btn:hover,
+.book-btn:hover {
+    background-color: #35484c;
+    border-color: #35484c;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Home page sections */
+.information,
+.booking,
+.contact {
+    max-width: 1100px;
+}
+
+.information {
+    background-color: transparent;
+}
+
+.information p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.opening-hours {
+    margin-top: 30px;
+}
+
+.booking,
+.contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.booking-image img,
+.contact-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /*Enquiries page*/
@@ -144,4 +218,35 @@ nav {
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        min-height: 50vh;
+    }
 
+    .callout {
+        padding: 25px 20px;
+        max-width: 95%;
+    }
+
+    .jumbotron-header {
+        font-size: 2rem;
+    }
+
+    .header-btn {
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        margin: 10px auto;
+    }
+
+    .booking,
+    .contact {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .booking-image img,
+    .contact-image img {
+        height: auto;
+    }
+}
