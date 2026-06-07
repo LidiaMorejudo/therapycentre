@@ -151,17 +151,47 @@ nav {
     padding-right: 25px;
 }
 
-/*Enquiries page*/
+/* Enquiries page */
+
 .contact-background {
-    height: 60vh;
+    min-height: 55vh;
     background: url('../images/indianlivingroom.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+/* Dark overlay to improve contrast over the detailed background image */
+.contact-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.contact-text {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    max-width: 520px;
+    border-radius: 8px;
+    color: #1f1f1f;
+}
+
+.contact-text h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-text h4 {
+    margin-top: 20px;
+    font-weight: 700;
+}   
 
 /* Yoga Sessions page */
 
@@ -317,6 +347,15 @@ nav {
     .booking-image img,
     .contact-image img {
         height: auto;
+    }
+
+    .contact-background {
+        min-height: 45vh;
+    }
+
+    .contact-text {
+        padding: 25px 20px;
+        max-width: 90%;
     }
 
     .findus-card {
