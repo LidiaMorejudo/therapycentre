@@ -193,6 +193,24 @@ nav {
     font-weight: 700;
 }   
 
+/* Booking page */
+
+.booking-policy {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.booking-policy h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.booking-policy p {
+    line-height: 1.7;
+}
+
 /* Yoga Sessions page */
 
 .session-header {
@@ -372,6 +390,10 @@ nav {
     }
 
     .session-card {
+        padding: 25px 20px;
+    }
+
+    .booking-policy {
         padding: 25px 20px;
     }
 }
