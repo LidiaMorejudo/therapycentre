@@ -4,7 +4,7 @@
 <!-- index.html content starts here -->
 {% block content %}
 
-<div class="container header">
+<div class="container-fluid header">
   <div class="row">
     <div class="col-12 callout jumbotron text-center">
       <h1 class="jumbotron-header">Welcome to our Yoga Therapy Centre!</h1>
@@ -35,9 +35,9 @@
 
 <!--Booking section-->
 <div class="container booking mt-5">
-  <div class="row align-items-center">
+  <div class="row align-items-center g-4">
     <div class="col-sm-12 col-md-6 booking-image">
-      <img src="/static/images/yogacentrehome.jpg" alt="image of yoga centre">
+      <img src="{% static 'images/yogacentrehome.jpg' %}" alt="image of yoga centre">
     </div>
     <div class="col-md-6 text-center align-items-center justify-content-center d-none d-md-flex">
        <a class="book-link btn btn-secondary btn-lg book-btn d-none d-md-block" href="{% url 'booking' %}">Book a session</a> 
@@ -47,7 +47,7 @@
 
 <!--Contact section-->
 <div class="container contact mt-5 mt-md-2">
-  <div class="row align-items-center justify-content-center">
+  <div class="row align-items-center justify-content-center g-4">
     <div class="col-sm-12 col-md-6 text-center">
       <h2>Contact us at:</h2>
       <h6>Mail: <a href="mailto:info@yogatherapycentre.com">info@yogatherapycentre.com</a></h6>
@@ -56,7 +56,7 @@
         <a class="btn btn-outline-secondary" href="{% url 'inquiries' %}">Enquiries Form</a></h6>
     </div>
     <div class="col-sm-12 col-md-6 contact-image text-md-end mt-5 d-none d-md-flex">
-      <img src="/static/images/holisticpractice.jpg" alt="image of holistic practice">
+      <img src="{% static 'images/holisticpractice.jpg' %}" alt="image of holistic practice">
     </div>
   </div>
 </div>
