@@ -163,7 +163,6 @@ nav {
     margin: auto;
 }
 
-/* Yoga Sessions page header */
 /* Yoga Sessions page */
 
 .session-header {
@@ -263,15 +262,29 @@ nav {
     padding: 0;
 }
 
-/* Responsive adjustments for small screens */
-@media (max-width: 576px) {
-    .findus-header {
-        height: 40vh;
-    }
-    .findus-text {
-        padding: 10px;
-        max-width: 95%;
-    }
+/* Find us page extra information */
+
+.findus-info {
+    max-width: 1100px;
+}
+
+.findus-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.findus-card h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.findus-card p {
+    line-height: 1.7;
+}
+
+.findus-card .btn {
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -305,17 +318,21 @@ nav {
     .contact-image img {
         height: auto;
     }
-}
 
-.session-header,
-.session-overlay {
-    min-height: 35vh;
-}
+    .findus-card {
+        padding: 25px 20px;
+    }
 
-.session-intro {
-    padding: 25px 20px;
-}
+    .session-header,
+    .session-overlay {
+        min-height: 35vh;
+    }
 
-.session-card {
-    padding: 25px 20px;
+    .session-intro {
+        padding: 25px 20px;
+    }
+
+    .session-card {
+        padding: 25px 20px;
+    }
 }
