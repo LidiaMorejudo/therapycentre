@@ -18,12 +18,15 @@ Developed using the **Django framework**, the application implements full CRUD f
 
 Live site can be seen [here](https://my-therapycentre-app-4c2771741a8a.herokuapp.com/).
 
+Tablet view
 ![Preview of Website](documentation/images/Tablet_therapycentre_image.png)
 
+Mobile view
 ![Preview of Website](documentation/images/mobile_therapycentre_image.png)
 
 ![Preview of Website](documentation/images/mobile2_therapycentre_image.png)
 
+Computer view
 ![Preview of Website](documentation/images/PC_therapycentre_image.png)
 
 Images were sourced from **Chrome**
