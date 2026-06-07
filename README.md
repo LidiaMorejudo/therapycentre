@@ -22,6 +22,8 @@ Live site can be seen [here](https://my-therapycentre-app-4c2771741a8a.herokuapp
 
 ![Preview of Website](documentation/images/mobile_therapycentre_image.png)
 
+![Preview of Website](documentation/images/mobile2_therapycentre_image.png)
+
 ![Preview of Website](documentation/images/PC_therapycentre_image.png)
 
 Images were sourced from **Chrome**
